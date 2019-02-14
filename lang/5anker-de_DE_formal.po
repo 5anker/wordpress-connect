@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 5 Anker Connect Importer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-14 11:38+0000\n"
+"PO-Revision-Date: 2019-02-14 11:38+0000\n"
+"Last-Translator: admin <info@5-anker.com>\n"
+"Language-Team: Deutsch (Sie)\n"
+"Language: de_DE_formal\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0.3"
+
+#: settings.php:13
+msgid "Connect"
+msgstr "Connect"
+
+#: settings.php:17
+msgid "General"
+msgstr "Verbindungseinstellungen"
+
+#: settings.php:21
+msgid "Public Token"
+msgstr "Öffentlicher Zugangsschlüssel"
+
+#: settings.php:27
+msgid "Private Token"
+msgstr "Privater Zugangsschlüssel"
+
+#: settings.php:33
+msgid "Additional configuration"
+msgstr "Zusatzkonfiguration"
+
+#: cron.php:12
+msgid "Once every 5 minutes"
+msgstr "Einmal alle 5 Minuten"
+
+#: post-types.php:11 post-types.php:18
+msgid "Marinas"
+msgstr "Marinas"
+
+#: post-types.php:12
+msgid "Marina"
+msgstr "Marina"
+
+#: post-types.php:13
+msgid "View Marina"
+msgstr "Marina anzeigen"
+
+#: post-types.php:14
+msgid "Search Marina"
+msgstr "Marina suchen"
+
+#: post-types.php:15
+msgid "No Marina found"
+msgstr "Keine Marinas gefunden"
+
+#: post-types.php:16
+msgid "No Marinas found in Trash"
+msgstr "Keine Marinas im Papierkorb"
+
+#: post-types.php:17
+msgid "Parent Marina:"
+msgstr "Vorige Marina:"
+
+#: post-types.php:61 post-types.php:68
+msgid "Boats"
+msgstr "Boote"
+
+#: post-types.php:62
+msgid "Boat"
+msgstr "Boot"
+
+#: post-types.php:63
+msgid "View Boat"
+msgstr "Boot anzeigen"
+
+#: post-types.php:64
+msgid "Search Boat"
+msgstr "Boote suchen"
+
+#: post-types.php:65
+msgid "No Boat found"
+msgstr "Kein Boot gefunden"
+
+#: post-types.php:66
+msgid "No Boats found in Trash"
+msgstr "Keine Boote im Papierkorb"
+
+#: post-types.php:67
+msgid "Parent Boat:"
+msgstr "Voriges Boot:"
+
+#. Name of the plugin
+msgid "5 Anker Connect Importer"
+msgstr "5 Anker Connect Importer"
+
+#. Description of the plugin
+msgid "Imports boats and destinations"
+msgstr "Importiert Boote und Marinas"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.5-anker.com"
+msgstr "https://www.5-anker.com"
+
+#. Author of the plugin
+msgid "5 Anker GmbH"
+msgstr "5 Anker GmbH"
