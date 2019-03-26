@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Boats
+Widget Name: Boats
 Description: Boats
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,7 +15,7 @@ class SiteoriginWlsBoats_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-boats',
-			__('Connect: Boats', '5anker'),
+			__('Boats', '5anker'),
 			[
 				'description' => __('Boats', '5anker'),
 			],

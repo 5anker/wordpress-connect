@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Contact Form
+Widget Name: Contact Form
 Description: Contact Form
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,7 +15,7 @@ class SiteoriginWlsContactForm_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-contact-form',
-			__('Connect: Contact Form', '5anker'),
+			__('Contact Form', '5anker'),
 			[
 				'description' => __('Contact Form', '5anker'),
 			],

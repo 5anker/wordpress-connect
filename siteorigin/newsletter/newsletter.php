@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Newsletter
+Widget Name: Newsletter
 Description: Newsletter
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,7 +15,7 @@ class SiteoriginWlsNewsletter_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-newsletter',
-			__('Connect: Newsletter', '5anker'),
+			__('Newsletter', '5anker'),
 			[
 				'description' => __('Newsletter', '5anker'),
 			],

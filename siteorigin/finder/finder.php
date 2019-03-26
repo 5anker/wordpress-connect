@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Finder
+Widget Name: Finder
 Description: Finder
 Author: 5 Anker GmbH
 Version: 1.0
@@ -14,7 +14,7 @@ class SiteoriginWlsFinder extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-finder',
-			__('Connect: Finder', '5anker'),
+			__('Finder', '5anker'),
 			[
 				'description' => __('Finder', '5anker'),
 			],

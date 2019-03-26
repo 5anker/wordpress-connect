@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Cruise Slider
+Widget Name: Cruise Slider
 Description: Cruise Slider
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,7 +15,7 @@ class SiteoriginWlsCruiseSlider_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-cruise-slider',
-			__('Connect: Cruise Slider', '5anker'),
+			__('Cruise Slider', '5anker'),
 			[
 				'description' => __('Cruise Slider', '5anker'),
 			],

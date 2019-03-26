@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Notepad
+Widget Name: Notepad
 Description: Notepad
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,7 +15,7 @@ class SiteoriginWlsNotepad_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-notepad',
-			__('Connect: Notepad', '5anker'),
+			__('Notepad', '5anker'),
 			[
 				'description' => __('Notepad', '5anker'),
 			],

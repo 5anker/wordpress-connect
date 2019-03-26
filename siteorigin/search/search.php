@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Search
+Widget Name: Search
 Description: Search
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,7 +15,7 @@ class SiteoriginWlsSearch_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-search',
-			__('Connect: Search', '5anker'),
+			__('Search', '5anker'),
 			[
 				'description' => __('Search', '5anker'),
 			],

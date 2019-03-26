@@ -49,9 +49,20 @@ class ElementorBoat extends Widget_Base
 		);
 
 		$this->add_control(
-			'fields',
+			'sections',
 			[
-				'label' => __('Fields', '5anker'),
+				'label' => __('Sections', '5anker'),
+				'type' => Controls_Manager::TEXT,
+				'default' => 'title,media,props,description,additional,availabilities,prices,infos,details,basement,sidebar,contact,alternatives',
+				'title' => __('', '5anker'),
+				'section' => 'settings_section'
+			]
+		);
+
+		$this->add_control(
+			'query',
+			[
+				'label' => __('Query', '5anker'),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 				'title' => __('', '5anker'),
@@ -65,7 +76,7 @@ class ElementorBoat extends Widget_Base
 	protected function render()
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-boat id="<?= $settings['id'] ?? ''; ?>" fields="<?= $settings['fields'] ?? ''; ?>"></wls-boat>
+		<wls-boat id="<?= $settings['id'] ?? ''; ?>" sections="<?= $settings['sections'] ?? ''; ?>" query="<?= $settings['query'] ?? ''; ?>"></wls-boat>
 		<?php
 	}
 }

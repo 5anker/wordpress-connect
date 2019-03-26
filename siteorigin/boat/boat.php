@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Boat
+Widget Name: Boat
 Description: Boat
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,7 +15,7 @@ class SiteoriginWlsBoat_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-search',
-			__('Connect: Boat', '5anker'),
+			__('Boat', '5anker'),
 			[
 				'description' => __('Boat', '5anker'),
 			],
@@ -35,9 +35,15 @@ class SiteoriginWlsBoat_Widget extends SiteOrigin_Widget
 				'default' => ''
 			],
 
-			'fields' => [
+			'sections' => [
 				'type' => 'text',
-				'label' => __('Fields', '5anker'),
+				'label' => __('Sections', '5anker'),
+				'default' => 'title,media,props,description,additional,availabilities,prices,infos,details,basement,sidebar,contact,alternatives'
+			],
+
+			'query' => [
+				'type' => 'text',
+				'label' => __('Query', '5anker'),
 				'default' => ''
 			],
 		];
@@ -46,7 +52,7 @@ class SiteoriginWlsBoat_Widget extends SiteOrigin_Widget
 	public function get_html_content($instance, $args, $template_vars, $css_name)
 	{
 		?>
-		<wls-boat id="<?= $instance['id']; ?>" fields="<?= $instance['fields'] ?? ''; ?>"></wls-boat>
+		<wls-boat id="<?= $instance['id']; ?>" sections="<?= $instance['sections'] ?? ''; ?>" query="<?= $instance['query'] ?? ''; ?>"></wls-boat>
 		<?php
 	}
 }

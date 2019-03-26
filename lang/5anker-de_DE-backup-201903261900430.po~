@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 5 Anker Connect Importer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-26 19:00+0000\n"
-"PO-Revision-Date: 2019-03-26 19:00+0000\n"
+"POT-Creation-Date: 2019-03-26 18:52+0000\n"
+"PO-Revision-Date: 2019-03-26 18:52+0000\n"
 "Last-Translator: root <root@wp.dev>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -67,12 +67,12 @@ msgid "Once every 5 minutes"
 msgstr "Einmal alle 5 Minuten"
 
 #: post-types.php:18 post-types.php:25 elementor/wls_marinas.php:18
-#: siteorigin/marinas/marinas.php:18 siteorigin/marinas/marinas.php:20
+#: siteorigin/marinas/marinas.php:20
 msgid "Marinas"
 msgstr "Marinas"
 
 #: post-types.php:19 elementor/wls_marina.php:18
-#: siteorigin/marina/marina.php:18 siteorigin/marina/marina.php:20
+#: siteorigin/marina/marina.php:20
 msgid "Marina"
 msgstr "Marina"
 
@@ -97,12 +97,11 @@ msgid "Parent Marina:"
 msgstr "Vorige Marina:"
 
 #: post-types.php:65 post-types.php:72 elementor/wls_boats.php:18
-#: siteorigin/boats/boats.php:18 siteorigin/boats/boats.php:20
+#: siteorigin/boats/boats.php:20
 msgid "Boats"
 msgstr "Boote"
 
-#: post-types.php:66 elementor/wls_boat.php:18 siteorigin/boat/boat.php:18
-#: siteorigin/boat/boat.php:20
+#: post-types.php:66 elementor/wls_boat.php:18 siteorigin/boat/boat.php:20
 msgid "Boat"
 msgstr "Boot"
 
@@ -176,7 +175,7 @@ msgstr "ID"
 msgid "Sections"
 msgstr "Bereiche"
 
-#: elementor/wls_map.php:18 siteorigin/map/map.php:18 siteorigin/map/map.php:20
+#: elementor/wls_map.php:18 siteorigin/map/map.php:20
 msgid "Map"
 msgstr "Seekarte"
 
@@ -193,13 +192,10 @@ msgid "Cruise slider"
 msgstr "Angebotekarussel"
 
 #: elementor/wls_boat_book_calendar.php:18
-#: siteorigin/boat-book-calendar/boat-book-calendar.php:18
-#: siteorigin/boat-book-calendar/boat-book-calendar.php:20
 msgid "Boat Book Calendar"
 msgstr "Buchungskalender & Termine"
 
 #: elementor/wls_contact_form.php:18
-#: siteorigin/contact-form/contact-form.php:18
 #: siteorigin/contact-form/contact-form.php:20
 msgid "Contact Form"
 msgstr "Kontaktformular"
@@ -210,13 +206,11 @@ msgstr "Kontaktformular"
 msgid "Privacy"
 msgstr "Privacy-Attribut"
 
-#: elementor/wls_notepad.php:18 siteorigin/notepad/notepad.php:18
-#: siteorigin/notepad/notepad.php:20
+#: elementor/wls_notepad.php:18 siteorigin/notepad/notepad.php:20
 msgid "Notepad"
 msgstr "Merkliste"
 
-#: elementor/wls_search.php:18 siteorigin/search/search.php:18
-#: siteorigin/search/search.php:20
+#: elementor/wls_search.php:18 siteorigin/search/search.php:20
 msgid "Search"
 msgstr "Terminsuche"
 
@@ -224,8 +218,7 @@ msgstr "Terminsuche"
 msgid "Boats slider"
 msgstr "Bootskarussel"
 
-#: elementor/wls_newsletter.php:18 siteorigin/newsletter/newsletter.php:18
-#: siteorigin/newsletter/newsletter.php:20
+#: elementor/wls_newsletter.php:18 siteorigin/newsletter/newsletter.php:20
 msgid "Newsletter"
 msgstr "Newsletter"
 
@@ -233,21 +226,62 @@ msgstr "Newsletter"
 msgid "Boats grid"
 msgstr "Boote-Übersicht"
 
+#: siteorigin/boats/boats.php:18
+msgid "Connect: Boats"
+msgstr "Connect: Bootssuche"
+
 #: siteorigin/boats-slider/boats-slider.php:18
+msgid "Connect: Boats Slider"
+msgstr "Connect: Bootekarussel"
+
 #: siteorigin/boats-slider/boats-slider.php:20
 msgid "Boats Slider"
 msgstr "Bootekarussel"
 
+#: siteorigin/boat/boat.php:18
+msgid "Connect: Boat"
+msgstr "Connect: Boot"
+
+#: siteorigin/contact-form/contact-form.php:18
+msgid "Connect: Contact Form"
+msgstr "Connect: Kontaktformular"
+
+#: siteorigin/search/search.php:18
+msgid "Connect: Search"
+msgstr "Connect: Terminsuche"
+
+#: siteorigin/boat-book-calendar/boat-book-calendar.php:18
+msgid "Connect: Boat Book Calendar"
+msgstr "Connect: Buchungskalender & Termine"
+
+#: siteorigin/boat-book-calendar/boat-book-calendar.php:20
+msgid "BoatBookCalendar"
+msgstr "Buchungskalender & Termine"
+
+#: siteorigin/map/map.php:18
+msgid "Connect: Map"
+msgstr "Connect: Seekarte"
+
 #: siteorigin/cruise-slider/cruise-slider.php:18
+msgid "Connect: Cruise Slider"
+msgstr "Connect: Angebotskarussel"
+
 #: siteorigin/cruise-slider/cruise-slider.php:20
 msgid "Cruise Slider"
 msgstr "Angebotskarussel"
 
-#: siteorigin/finder/finder.php:17 siteorigin/finder/finder.php:19
+#: siteorigin/finder/finder.php:17
+msgid "Connect: Finder"
+msgstr "Connect: Finder"
+
+#: siteorigin/finder/finder.php:19
 msgid "Finder"
 msgstr "Finder"
 
 #: siteorigin/search-form/search-form.php:18
+msgid "Connect: Search Form"
+msgstr "Connect: Suchleiste"
+
 #: siteorigin/search-form/search-form.php:20
 msgid "Search Form"
 msgstr "Suchleiste"
@@ -256,10 +290,29 @@ msgstr "Suchleiste"
 msgid "Row Class"
 msgstr "Row-Class-Attribut"
 
+#: siteorigin/marina/marina.php:18
+msgid "Connect: Marina"
+msgstr "Connect: Marina"
+
+#: siteorigin/newsletter/newsletter.php:18
+msgid "Connect: Newsletter"
+msgstr "Connect: Newsletter"
+
 #: siteorigin/boats-grid/boats-grid.php:18
+msgid "Connect: Boats Grid"
+msgstr "Connect: Boote-Übersicht"
+
 #: siteorigin/boats-grid/boats-grid.php:20
 msgid "Boats Grid"
 msgstr "Boote-Übersicht"
+
+#: siteorigin/marinas/marinas.php:18
+msgid "Connect: Marinas"
+msgstr "Connect: Marinas"
+
+#: siteorigin/notepad/notepad.php:18
+msgid "Connect: Notepad"
+msgstr "Connect: Merkliste"
 
 #. Name of the plugin
 msgid "5 Anker Connect"

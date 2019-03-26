@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Marinas
+Widget Name: Marinas
 Description: Marinas
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,7 +15,7 @@ class SiteoriginWlsMarinas_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-marinas',
-			__('Connect: Marinas', '5anker'),
+			__('Marinas', '5anker'),
 			[
 				'description' => __('Marinas', '5anker'),
 			],

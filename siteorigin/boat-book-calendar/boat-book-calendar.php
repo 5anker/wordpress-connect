@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Boat Book Calendar
+Widget Name: Boat Book Calendar
 Description: Boat Book Calendar
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,9 +15,9 @@ class SiteoriginWlsBoatBookCalendar_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-boat-book-calendar',
-			__('Connect: Boat Book Calendar', '5anker'),
+			__('Boat Book Calendar', '5anker'),
 			[
-				'description' => __('BoatBookCalendar', '5anker'),
+				'description' => __('Boat Book Calendar', '5anker'),
 			],
 			[
 			],

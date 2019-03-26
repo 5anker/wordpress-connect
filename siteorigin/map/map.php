@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Map
+Widget Name: Map
 Description: Map
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,7 +15,7 @@ class SiteoriginWlsMap_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-map',
-			__('Connect: Map', '5anker'),
+			__('Map', '5anker'),
 			[
 				'description' => __('Map', '5anker'),
 			],

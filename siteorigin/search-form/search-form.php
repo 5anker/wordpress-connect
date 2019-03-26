@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Search Form
+Widget Name: Search Form
 Description: Search Form
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,7 +15,7 @@ class SiteoriginWlsSearchForm_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-search-form',
-			__('Connect: Search Form', '5anker'),
+			__('Search Form', '5anker'),
 			[
 				'description' => __('Search Form', '5anker'),
 			],

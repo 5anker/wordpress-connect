@@ -1,7 +1,7 @@
 <?php
 
 /*
-Widget Name: Connect: Boats Grid
+Widget Name: Boats Grid
 Description: Boats Grid
 Author: 5 Anker GmbH
 Version: 1.0
@@ -15,7 +15,7 @@ class SiteoriginWlsBoatsGrid_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-boats-grid',
-			__('Connect: Boats Grid', '5anker'),
+			__('Boats Grid', '5anker'),
 			[
 				'description' => __('Boats Grid', '5anker'),
 			],
