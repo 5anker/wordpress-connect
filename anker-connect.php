@@ -7,6 +7,7 @@
  Author: 5 Anker GmbH
  Author URI: https://www.5-anker.com
  Text Domain: 5anker
+ GitHub Plugin URI: https://github.com/5anker/5anker-connect-wp
  */
 
 if (! defined('ABSPATH')) {
