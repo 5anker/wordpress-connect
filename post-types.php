@@ -5,23 +5,25 @@ if (! defined('ABSPATH')) {
 }
 
 // Register the custom post type.
-function register_basement_cpt()
+function register_wls_post_types()
 {
 	$settings = (object)unserialize(get_option('connect_options'));
 
-	$labels = [
-		'name'			   => __('Marinas', '5anker'),
-		'singular_name'	  => __('Marina', '5anker'),
-		'view_item'		  => __('View Marina', '5anker'),
-		'search_items'	   => __('Search Marina', '5anker'),
-		'not_found'		  => __('No Marina found', '5anker'),
-		'not_found_in_trash' => __('No Marinas found in Trash', '5anker'),
-		'parent_item_colon'  => __('Parent Marina:', '5anker'),
-		'menu_name'		  => __('Marinas', '5anker'),
-	];
+	if (!$settings->import) {
+		return;
+	}
 
 	$args = [
-		'labels'			  => $labels,
+		'labels'			  => [
+			'name'			   => __('Marinas', '5anker'),
+			'singular_name'	  => __('Marina', '5anker'),
+			'view_item'		  => __('View Marina', '5anker'),
+			'search_items'	   => __('Search Marina', '5anker'),
+			'not_found'		  => __('No Marina found', '5anker'),
+			'not_found_in_trash' => __('No Marinas found in Trash', '5anker'),
+			'parent_item_colon'  => __('Parent Marina:', '5anker'),
+			'menu_name'		  => __('Marinas', '5anker'),
+		],
 		'hierarchical'		=> false,
 		'description'		 => 'description',
 		'taxonomies'		  => [],
@@ -57,26 +59,18 @@ function register_basement_cpt()
 	];
 
 	register_post_type('basement', $args);
-}
-add_action('init', 'register_basement_cpt');
-
-function register_boat_cpt()
-{
-	$settings = (object)unserialize(get_option('connect_options'));
-
-	$labels = [
-		'name'			   => __('Boats', '5anker'),
-		'singular_name'	  => __('Boat', '5anker'),
-		'view_item'		  => __('View Boat', '5anker'),
-		'search_items'	   => __('Search Boat', '5anker'),
-		'not_found'		  => __('No Boat found', '5anker'),
-		'not_found_in_trash' => __('No Boats found in Trash', '5anker'),
-		'parent_item_colon'  => __('Parent Boat:', '5anker'),
-		'menu_name'		  => __('Boats', '5anker'),
-	];
 
 	$args = [
-		'labels'			  => $labels,
+		'labels'			  => [
+			'name'			   => __('Boats', '5anker'),
+			'singular_name'	  => __('Boat', '5anker'),
+			'view_item'		  => __('View Boat', '5anker'),
+			'search_items'	   => __('Search Boat', '5anker'),
+			'not_found'		  => __('No Boat found', '5anker'),
+			'not_found_in_trash' => __('No Boats found in Trash', '5anker'),
+			'parent_item_colon'  => __('Parent Boat:', '5anker'),
+			'menu_name'		  => __('Boats', '5anker'),
+		],
 		'hierarchical'		=> false,
 		'description'		 => 'description',
 		'taxonomies'		  => [],
@@ -113,4 +107,4 @@ function register_boat_cpt()
 
 	register_post_type('boat', $args);
 }
-add_action('init', 'register_boat_cpt');
+add_action('init', 'register_wls_post_types');

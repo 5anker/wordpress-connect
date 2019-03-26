@@ -25,6 +25,7 @@ require_once(dirname(__FILE__).'/columns.php');
 require_once(dirname(__FILE__).'/templates.php');
 require_once(dirname(__FILE__).'/scripts.php');
 require_once(dirname(__FILE__).'/settings.php');
+require_once(dirname(__FILE__).'/widgets.php');
 
 register_activation_hook(__FILE__, 'anker_plugin_activate');
 add_action('admin_init', 'anker_plugin_redirect');

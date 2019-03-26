@@ -8,7 +8,19 @@ add_action('wp_head', function () {
 	$settings = (object)unserialize(get_option('connect_options'));
 	$defaults = [
 		'token' => $settings->public_token,
+		'redirects' => [],
+		'settings' => [],
 	];
+
+	if ($settings->import) {
+		$defaults['redirects']['boat'] = "/{$settings->boats_uri}/{slug}";
+		$defaults['redirects']['booking'] = "/{$settings->boats_uri}/{slug}";
+		$defaults['redirects']['marina'] = "/{$settings->basements_uri}/{slug}";
+	}
+
+	if ($settings->notepad) {
+		$defaults['settings']['notepad'] = true;
+	}
 
 	$conf = json_decode(preg_replace('/\\\"/', "\"", $settings->config), true);
 
@@ -22,6 +34,5 @@ add_action('wp_head', function () {
 });
 
 add_action('wp_enqueue_scripts', function () {
-	wp_enqueue_script('widget-wls', 'https://wls.5-anker.com/js/app.js?v=' . date('y.n.j.G'), null, null, true);
-	wp_enqueue_style('widget-wls-css', 'https://wls.5-anker.com/css/app.css?v=' . date('y.n.j.G'), false, null);
+	wp_enqueue_script('widget-wls', 'https://wls.5-anker.com/app.js?v=' . date('y.n.j.G'), null, null, true);
 }, 100);

@@ -8,6 +8,8 @@ function anker_plugin_activate()
 		'config' => '{}',
 		'basements_uri' => 'marina',
 		'boats_uri' => 'yacht',
+		'import' => false,
+		'notepad' => false
 	];
 
 	if (!$options = get_option('connect_options')) {

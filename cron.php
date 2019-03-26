@@ -30,6 +30,12 @@ add_action('anker_schedule_hook_basements', 'anker_schedule_hook_basements');
 
 function anker_schedule_hook_boats()
 {
+	$settings = (object)unserialize(get_option('connect_options'));
+
+	if (!$settings->import) {
+		return;
+	}
+
 	$page = get_option('last_boat_import_page', 1);
 
 	if (!$rest = AnkerRest::get('rest/remote/wp/boat?limit=50&updated_at=gt:' . get_option('last_boat_import', '2015-01-01 00:00:00').'&page=' . $page)) {
@@ -86,6 +92,12 @@ function anker_schedule_hook_boats()
 
 function anker_schedule_hook_basements()
 {
+	$settings = (object)unserialize(get_option('connect_options'));
+
+	if (!$settings->import) {
+		return;
+	}
+
 	$page = get_option('last_basement_import_page', 1);
 
 	if (!$rest = AnkerRest::get('rest/remote/wp/basement?limit=20&updated_at=gt:' . get_option('last_basement_import', '2015-01-01 00:00:00').'&page=' . $page)) {
