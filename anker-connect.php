@@ -14,18 +14,24 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-load_plugin_textdomain('5anker', false, basename(dirname(__FILE__)) . '/lang');
+define("CONNECT_PLUGIN_PATH", plugin_dir_path(__FILE__));
+define("CONNECT_INCLUDES_PATH", plugin_dir_path(__FILE__) . 'inc');
+define("CONNECT_LANG_PATH", basename(plugin_dir_path(__FILE__)) . '/lang/');
 
-require_once(dirname(__FILE__).'/titan-framework/titan-framework-embedder.php');
-require_once(dirname(__FILE__).'/setup.php');
-require_once(dirname(__FILE__).'/rest.php');
-require_once(dirname(__FILE__).'/cron.php');
-require_once(dirname(__FILE__).'/post-types.php');
-require_once(dirname(__FILE__).'/columns.php');
-require_once(dirname(__FILE__).'/templates.php');
-require_once(dirname(__FILE__).'/scripts.php');
-require_once(dirname(__FILE__).'/settings.php');
-require_once(dirname(__FILE__).'/widgets.php');
+load_plugin_textdomain('5anker', false, CONNECT_LANG_PATH);
+
+require_once(CONNECT_PLUGIN_PATH . '/titan-framework/titan-framework-embedder.php');
+require_once(CONNECT_INCLUDES_PATH . '/setup.php');
+require_once(CONNECT_INCLUDES_PATH . '/rest.php');
+require_once(CONNECT_INCLUDES_PATH . '/cron.php');
+require_once(CONNECT_INCLUDES_PATH . '/post-types.php');
+require_once(CONNECT_INCLUDES_PATH . '/columns.php');
+require_once(CONNECT_INCLUDES_PATH . '/templates.php');
+require_once(CONNECT_INCLUDES_PATH . '/scripts.php');
+require_once(CONNECT_INCLUDES_PATH . '/settings.php');
+
+require_once(CONNECT_INCLUDES_PATH . '/widgets.php');
+require_once(CONNECT_INCLUDES_PATH . '/blocks.php');
 
 register_activation_hook(__FILE__, 'anker_plugin_activate');
 add_action('admin_init', 'anker_plugin_redirect');

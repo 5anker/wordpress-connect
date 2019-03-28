@@ -1,10 +1,10 @@
 <?php
 
 
-require_once(dirname(__FILE__).'/elementor/index.php');
+require_once(CONNECT_PLUGIN_PATH . '/elementor/index.php');
 
 add_filter('siteorigin_widgets_widget_folders', function ($folders) {
-	$folders[] = dirname(__FILE__) . '/siteorigin/';
+	$folders[] = CONNECT_PLUGIN_PATH . '/siteorigin/';
 
 	return $folders;
 });
