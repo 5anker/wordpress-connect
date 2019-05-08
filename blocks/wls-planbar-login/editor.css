@@ -1,0 +1,14 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-anker-connect-wls-planbar-login {
+	border-radius: 5px;
+	padding: 15px;
+	padding-left: 60px;
+	color: #fff;
+	background: #123B60 url('../wls-search/anker.png') 10px center no-repeat;
+	background-size: 30px;
+}

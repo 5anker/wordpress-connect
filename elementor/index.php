@@ -36,6 +36,7 @@ class ElementorElements
 		'wls_marina' => 'Elementor\ElementorMarina',
 		'wls_map' => 'Elementor\ElementorMap',
 		'wls_notepad' => 'Elementor\ElementorNotepad',
+		'wls_planbar_login' => 'Elementor\ElementorPlanbarLogin',
 	];
 
 	public static function get_instance()
