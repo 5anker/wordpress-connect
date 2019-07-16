@@ -1,23 +1,23 @@
 <?php
 
 /*
-Widget Name: Search
-Description: Search
+Widget Name: Search day
+Description: Search day
 Author: 5 Anker GmbH
 Version: 1.0
 Author URI: https://www.5-anker.com
 Documentation: https://docs.5-anker.com/white-label-einbinder/terminsuche
 */
 
-class SiteoriginWlsSearch_Widget extends SiteOrigin_Widget
+class SiteoriginWlsSearchDay_Widget extends SiteOrigin_Widget
 {
 	public function __construct()
 	{
 		parent::__construct(
-			'wls-search',
-			__('Search', '5anker'),
+			'wls-search-day',
+			__('Search day', '5anker'),
 			[
-				'description' => __('Search', '5anker'),
+				'description' => __('Search day', '5anker'),
 			],
 			[
 			],
@@ -45,4 +45,4 @@ class SiteoriginWlsSearch_Widget extends SiteOrigin_Widget
 	}
 }
 
-siteorigin_widget_register('wls-search', __FILE__, 'SiteoriginWlsSearch_Widget');
+siteorigin_widget_register('wls-search-day', __FILE__, 'SiteoriginWlsSearchDay_Widget');

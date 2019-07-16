@@ -27,6 +27,7 @@ class ElementorElements
 		'wls_boats_grid' => 'Elementor\ElementorBoatsGrid',
 		'wls_boats_slider' => 'Elementor\ElementorBoatsSlider',
 		'wls_search' => 'Elementor\ElementorSearch',
+		'wls_search_day' => 'Elementor\ElementorSearchDay',
 		'wls_cruise_slider' => 'Elementor\ElementorCruiseSlider',
 		'wls_search_form' => 'Elementor\ElementorSearchForm',
 		'wls_newsletter' => 'Elementor\ElementorNewsletter',

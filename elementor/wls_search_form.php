@@ -87,7 +87,7 @@ class ElementorSearchForm extends Widget_Base
 	protected function render($instance = [])
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-search-form query="<?= $settings['query'] ?? ''; ?>" fields="<?= $settings['fields'] ?? ''; ?>" redirect="<?= $settings['redirect'] ?? ''; ?>" row-class="<?= $settings['class'] ?? ''; ?>"></wls-search-form>
+		<wls-search-form<?= !empty($settings['query']) ? " query=\"{$settings['query']}\"" : ''; ?><?= !empty($settings['fields']) ? " fields=\"{$settings['fields']}\"" : ''; ?><?= !empty($settings['redirect']) ? " redirect=\"{$settings['redirect']}\"" : ''; ?><?= !empty($settings['class']) ? " row-class=\"{$settings['class']}\"" : ''; ?>></wls-search-form>
 		<?php
 	}
 }

@@ -6,16 +6,16 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorSearch extends Widget_Base
+class ElementorSearchDay extends Widget_Base
 {
 	public function get_name()
 	{
-		return 'wls-search';
+		return 'wls-search-day';
 	}
 
 	public function get_title()
 	{
-		return __('Search', '5anker');
+		return __('Search Day', '5anker');
 	}
 
 	public function get_categories()
@@ -65,7 +65,7 @@ class ElementorSearch extends Widget_Base
 	protected function render($instance = [])
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-search<?= !empty($settings['query']) ? " query=\"{$settings['query']}\"" : ''; ?><?= !empty($settings['fields']) ? " fields=\"{$settings['fields']}\"" : ''; ?>></wls-search>
+		<wls-search-day<?= !empty($settings['query']) ? " query=\"{$settings['query']}\"" : ''; ?><?= !empty($settings['fields']) ? " fields=\"{$settings['fields']}\"" : ''; ?>></wls-search-day>
 		<?php
 	}
 }

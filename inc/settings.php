@@ -38,6 +38,15 @@ function anker_load_settings()
 		'default' => false
 	]);
 
+	if ($settings->import) {
+		$general->createOption([
+			'name' => __('Index boats and basements', '5anker'),
+			'id' => 'index',
+			'type' => 'checkbox',
+			'default' => false
+		]);
+	}
+
 	$general->createOption([
 		'name' => __('Activate notepad', '5anker'),
 		'id' => 'notepad',

@@ -9,6 +9,7 @@ function anker_plugin_activate()
 		'basements_uri' => 'marina',
 		'boats_uri' => 'yacht',
 		'import' => false,
+		'index' => false,
 		'notepad' => false
 	];
 

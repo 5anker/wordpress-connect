@@ -52,7 +52,7 @@ class SiteoriginWlsBoat_Widget extends SiteOrigin_Widget
 	public function get_html_content($instance, $args, $template_vars, $css_name)
 	{
 		?>
-		<wls-boat id="<?= $instance['id']; ?>" sections="<?= $instance['sections'] ?? ''; ?>" query="<?= $instance['query'] ?? ''; ?>"></wls-boat>
+		<wls-boat id="<?= $instance['id']; ?>"<?= !empty($instance['query']) ? " query=\"{$instance['query']}\"" : ''; ?><?= !empty($instance['sections']) ? " sections=\"{$instance['sections']}\"" : ''; ?>></wls-boat>
 		<?php
 	}
 }

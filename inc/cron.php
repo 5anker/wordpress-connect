@@ -71,9 +71,17 @@ function anker_schedule_hook_boats()
 
 		$metas = array_merge([
 			'com5anker_id' => $boat->id,
+			'com5anker_boat_id' => $boat->id,
 			'com5anker_mm' => $boat->model->manufacturer->name . ' ' . $boat->model->name,
 			'com5anker_data' => $boat,
 		], (array)$boat->metas);
+
+		if ($settings->index === false) {
+			$metas = array_merge($metas, [
+				'_yoast_wpseo_meta-robots-noindex' => 1,
+				'_yoast_wpseo_meta-robots-nofollow' => 1,
+			]);
+		}
 
 		foreach ($metas as $key => $value) {
 			update_post_meta($postInsertId, $key, $value);
@@ -133,9 +141,17 @@ function anker_schedule_hook_basements()
 
 		$metas = array_merge([
 			'com5anker_id' => $basement->id,
+			'com5anker_basement_id' => $basement->id,
 			'com5anker_region' => $basement->region->name,
 			'com5anker_data' => $basement,
 		], (array)$basement->metas);
+
+		if ($settings->index === false) {
+			$metas = array_merge($metas, [
+				'_yoast_wpseo_meta-robots-noindex' => 1,
+				'_yoast_wpseo_meta-robots-nofollow' => 1,
+			]);
+		}
 
 		foreach ($metas as $key => $value) {
 			update_post_meta($postInsertId, $key, $value);

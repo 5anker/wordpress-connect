@@ -58,7 +58,7 @@ class SiteoriginWlsSearchForm_Widget extends SiteOrigin_Widget
 	public function get_html_content($instance, $args, $template_vars, $css_name)
 	{
 		?>
-		<wls-search-form query="<?= $instance['query']; ?>" fields="<?= $instance['fields']; ?>" redirect="<?= $instance['redirect']; ?>" row-class="<?= $instance['class']; ?>"></wls-search-form>
+		<wls-search-form<?= !empty($instance['query']) ? " query=\"{$instance['query']}\"" : ''; ?><?= !empty($instance['fields']) ? " fields=\"{$instance['fields']}\"" : ''; ?><?= !empty($instance['redirect']) ? " redirect=\"{$instance['redirect']}\"" : ''; ?><?= !empty($instance['class']) ? " row-class=\"{$instance['class']}\"" : ''; ?>></wls-search-form>
 		<?php
 	}
 }
