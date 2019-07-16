@@ -76,7 +76,7 @@ function anker_schedule_hook_boats()
 			'com5anker_data' => $boat,
 		], (array)$boat->metas);
 
-		if ($settings->index === false) {
+		if (!isset($settings->index) || empty($settings->index)) {
 			$metas = array_merge($metas, [
 				'_yoast_wpseo_meta-robots-noindex' => 1,
 				'_yoast_wpseo_meta-robots-nofollow' => 1,
@@ -146,7 +146,7 @@ function anker_schedule_hook_basements()
 			'com5anker_data' => $basement,
 		], (array)$basement->metas);
 
-		if ($settings->index === false) {
+		if (!isset($settings->index) || empty($settings->index)) {
 			$metas = array_merge($metas, [
 				'_yoast_wpseo_meta-robots-noindex' => 1,
 				'_yoast_wpseo_meta-robots-nofollow' => 1,
