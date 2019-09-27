@@ -4,8 +4,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-function add_wls_elementor_widget_categories($elements_manager)
-{
+add_action('elementor/elements/categories_registered', function ($elements_manager) {
 	$elements_manager->add_category(
 		'connect-wls',
 		[
@@ -13,8 +12,7 @@ function add_wls_elementor_widget_categories($elements_manager)
 			'icon' => 'fa fa-plug',
 		]
 	);
-}
-add_action('elementor/elements/categories_registered', 'add_wls_elementor_widget_categories');
+});
 
 add_action('elementor/widgets/widgets_registered', function () {
 	$plugins = [
