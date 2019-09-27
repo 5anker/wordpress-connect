@@ -6,7 +6,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorMarina extends Widget_Base
+class ElementorMarina_Widget extends Widget_Base
 {
 	public function get_name()
 	{
@@ -44,7 +44,6 @@ class ElementorMarina extends Widget_Base
 				'type' => Controls_Manager::NUMBER,
 				'default' => '',
 				'title' => __('', '5anker'),
-				'section' => 'settings_section'
 			]
 		);
 

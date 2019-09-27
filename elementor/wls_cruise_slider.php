@@ -6,7 +6,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorCruiseSlider extends Widget_Base
+class ElementorCruiseSlider_Widget extends Widget_Base
 {
 	public function get_name()
 	{
@@ -43,8 +43,7 @@ class ElementorCruiseSlider extends Widget_Base
 				'label' => __('Query', '5anker'),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', '5anker'),
-				'section' => 'settings_section',
+				'title' => __('', '5anker')
 			]
 		);
 

@@ -6,7 +6,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorBoats extends Widget_Base
+class ElementorBoats_Widget extends Widget_Base
 {
 	public function get_name()
 	{
@@ -43,8 +43,7 @@ class ElementorBoats extends Widget_Base
 				'label' => __('Query', '5anker'),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', '5anker'),
-				'section' => 'settings_section',
+				'title' => __('', '5anker')
 			]
 		);
 

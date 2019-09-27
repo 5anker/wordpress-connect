@@ -6,7 +6,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorNotepad extends Widget_Base
+class ElementorNotepad_Widget extends Widget_Base
 {
 	public function get_name()
 	{

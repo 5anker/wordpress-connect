@@ -6,7 +6,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorPlanbarLogin extends Widget_Base
+class ElementorPlanbarLogin_Widget extends Widget_Base
 {
 	public function get_name()
 	{

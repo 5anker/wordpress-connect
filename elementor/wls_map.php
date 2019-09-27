@@ -6,7 +6,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorMap extends Widget_Base
+class ElementorMap_Widget extends Widget_Base
 {
 	public function get_name()
 	{
@@ -44,7 +44,6 @@ class ElementorMap extends Widget_Base
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 				'title' => __('', '5anker'),
-				'section' => 'settings_section'
 			]
 		);
 
@@ -55,7 +54,6 @@ class ElementorMap extends Widget_Base
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 				'title' => __('', '5anker'),
-				'section' => 'settings_section'
 			]
 		);
 

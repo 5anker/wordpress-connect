@@ -6,7 +6,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorBoat extends Widget_Base
+class ElementorBoat_Widget extends Widget_Base
 {
 	public function get_name()
 	{
@@ -44,7 +44,6 @@ class ElementorBoat extends Widget_Base
 				'type' => Controls_Manager::NUMBER,
 				'default' => '',
 				'title' => __('', '5anker'),
-				'section' => 'settings_section'
 			]
 		);
 
@@ -55,7 +54,6 @@ class ElementorBoat extends Widget_Base
 				'type' => Controls_Manager::TEXT,
 				'default' => 'title,media,props,description,additional,availabilities,prices,infos,details,basement,sidebar,contact,alternatives',
 				'title' => __('', '5anker'),
-				'section' => 'settings_section'
 			]
 		);
 
@@ -66,7 +64,6 @@ class ElementorBoat extends Widget_Base
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 				'title' => __('', '5anker'),
-				'section' => 'settings_section'
 			]
 		);
 

@@ -6,7 +6,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorSearchForm extends Widget_Base
+class ElementorSearchForm_Widget extends Widget_Base
 {
 	public function get_name()
 	{
@@ -43,8 +43,7 @@ class ElementorSearchForm extends Widget_Base
 				'label' => __('Query', '5anker'),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', '5anker'),
-				'section' => 'settings_section',
+				'title' => __('', '5anker')
 			]
 		);
 
@@ -54,8 +53,7 @@ class ElementorSearchForm extends Widget_Base
 				'label' => __('Fields', '5anker'),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', '5anker'),
-				'section' => 'settings_section',
+				'title' => __('', '5anker')
 			]
 		);
 
@@ -65,8 +63,7 @@ class ElementorSearchForm extends Widget_Base
 				'label' => __('Redirect', '5anker'),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', '5anker'),
-				'section' => 'settings_section',
+				'title' => __('', '5anker')
 			]
 		);
 
@@ -76,8 +73,7 @@ class ElementorSearchForm extends Widget_Base
 				'label' => __('Row class', '5anker'),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', '5anker'),
-				'section' => 'settings_section',
+				'title' => __('', '5anker')
 			]
 		);
 

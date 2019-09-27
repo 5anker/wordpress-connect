@@ -6,7 +6,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorContactForm extends Widget_Base
+class ElementorContactForm_Widget extends Widget_Base
 {
 	public function get_name()
 	{
@@ -43,8 +43,7 @@ class ElementorContactForm extends Widget_Base
 				'label' => __('Privacy', '5anker'),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', '5anker'),
-				'section' => 'settings_section',
+				'title' => __('', '5anker')
 			]
 		);
 
