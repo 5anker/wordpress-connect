@@ -1,37 +1,82 @@
 <?php
-/*
- Plugin Name: 5 Anker Connect
- Plugin URI: https://www.5-anker.com
- Description: This Plugin inserts the WLS Widgets and imports all boat and destination data.
- Version: 3.2.2
- Author: 5 Anker GmbH
- Author URI: https://www.5-anker.com
- Text Domain: 5anker
- GitHub Plugin URI: https://github.com/5anker/5anker-connect-wp
+
+/**
+ * The plugin bootstrap file
+ *
+ * This file is read by WordPress to generate the plugin information in the plugin
+ * admin area. This file also includes all of the dependencies used by the plugin,
+ * registers the activation and deactivation functions, and defines a function
+ * that starts the plugin.
+ *
+ * @link              https://www.5-anker.com
+ * @since             1.0.0
+ * @package           Anker_Connect
+ *
+ * @wordpress-plugin
+ * Plugin Name:       5 Anker Connect
+ * Plugin URI:        https://www.5-anker.com
+ * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Version:           1.0.0
+ * Author:            Jonas Imping
+ * Author URI:        https://www.5-anker.com
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       anker-connect
+ * Domain Path:       /languages
  */
 
-if (! defined('ABSPATH')) {
-	exit;
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
 }
 
-define("CONNECT_PLUGIN_PATH", plugin_dir_path(__FILE__));
-define("CONNECT_INCLUDES_PATH", plugin_dir_path(__FILE__) . 'inc');
-define("CONNECT_LANG_PATH", basename(plugin_dir_path(__FILE__)) . '/lang/');
+/**
+ * Currently plugin version.
+ * Start at version 1.0.0 and use SemVer - https://semver.org
+ * Rename this for your plugin and update it as you release new versions.
+ */
+define( 'ANKER_CONNECT_VERSION', '1.0.0' );
 
-load_plugin_textdomain('5anker', false, CONNECT_LANG_PATH);
+/**
+ * The code that runs during plugin activation.
+ * This action is documented in includes/class-anker-connect-activator.php
+ */
+function activate_anker_connect() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-anker-connect-activator.php';
+	Anker_Connect_Activator::activate();
+}
 
-require_once(CONNECT_PLUGIN_PATH . '/titan-framework/titan-framework-embedder.php');
-require_once(CONNECT_INCLUDES_PATH . '/setup.php');
-require_once(CONNECT_INCLUDES_PATH . '/rest.php');
-require_once(CONNECT_INCLUDES_PATH . '/cron.php');
-require_once(CONNECT_INCLUDES_PATH . '/post-types.php');
-require_once(CONNECT_INCLUDES_PATH . '/columns.php');
-require_once(CONNECT_INCLUDES_PATH . '/templates.php');
-require_once(CONNECT_INCLUDES_PATH . '/scripts.php');
-require_once(CONNECT_INCLUDES_PATH . '/settings.php');
+/**
+ * The code that runs during plugin deactivation.
+ * This action is documented in includes/class-anker-connect-deactivator.php
+ */
+function deactivate_anker_connect() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-anker-connect-deactivator.php';
+	Anker_Connect_Deactivator::deactivate();
+}
 
-require_once(CONNECT_INCLUDES_PATH . '/widgets.php');
-require_once(CONNECT_INCLUDES_PATH . '/blocks.php');
+register_activation_hook( __FILE__, 'activate_anker_connect' );
+register_deactivation_hook( __FILE__, 'deactivate_anker_connect' );
 
-register_activation_hook(__FILE__, 'anker_plugin_activate');
-add_action('admin_init', 'anker_plugin_redirect');
+/**
+ * The core plugin class that is used to define internationalization,
+ * admin-specific hooks, and public-facing site hooks.
+ */
+require plugin_dir_path( __FILE__ ) . 'includes/class-anker-connect.php';
+
+/**
+ * Begins execution of the plugin.
+ *
+ * Since everything within the plugin is registered via hooks,
+ * then kicking off the plugin from this point in the file does
+ * not affect the page life cycle.
+ *
+ * @since    1.0.0
+ */
+function run_anker_connect() {
+
+	$plugin = new Anker_Connect();
+	$plugin->run();
+
+}
+run_anker_connect();
