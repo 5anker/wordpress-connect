@@ -1,12 +1,10 @@
 <?php
 
-namespace Elementor;
-
 if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorMap_Widget extends Widget_Base
+class ElementorMap_Widget extends \Elementor\Widget_Base
 {
 	public function get_name()
 	{
@@ -41,7 +39,7 @@ class ElementorMap_Widget extends Widget_Base
 			'lat',
 			[
 				'label' => __('Latitude', 'anker-connect'),
-				'type' => Controls_Manager::TEXT,
+				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
 				'title' => __('', 'anker-connect'),
 			]
@@ -51,7 +49,7 @@ class ElementorMap_Widget extends Widget_Base
 			'lng',
 			[
 				'label' => __('Longitude', 'anker-connect'),
-				'type' => Controls_Manager::TEXT,
+				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
 				'title' => __('', 'anker-connect'),
 			]

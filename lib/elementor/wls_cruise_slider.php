@@ -1,58 +1,50 @@
 <?php
 
-namespace Elementor;
-
-if (! defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class ElementorCruiseSlider_Widget extends Widget_Base
-{
-	public function get_name()
-	{
+class ElementorCruiseSlider_Widget extends \Elementor\Widget_Base {
+	public function get_name() {
 		return 'wls-cruise-slider';
 	}
 
-	public function get_title()
-	{
-		return __('Cruise slider', 'anker-connect');
+	public function get_title() {
+		return __( 'Cruise slider', 'anker-connect' );
 	}
 
-	public function get_categories()
-	{
+	public function get_categories() {
 		return [ 'connect-wls' ];
 	}
 
-	public function get_icon()
-	{
+	public function get_icon() {
 		return 'fa fa-arrows-h';
 	}
 
-	protected function _register_controls()
-	{
+	protected function _register_controls() {
 		$this->start_controls_section(
 			'settings_section',
 			[
-				'label' => esc_html__('Settings', 'anker-connect'),
+				'label' => esc_html__( 'Settings', 'anker-connect' ),
 			]
 		);
 
 		$this->add_control(
 			'query',
 			[
-				'label' => __('Query', 'anker-connect'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Query', 'anker-connect' ),
+				'type'    => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', 'anker-connect')
+				'title'   => __( '', 'anker-connect' )
 			]
 		);
 
 		$this->end_controls_section();
 	}
-	protected function render($instance = [])
-	{
+
+	protected function render( $instance = [] ) {
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-cruise-slider query="<?= $settings['query'] ?? ''; ?>"></wls-cruise-slider>
+        <wls-cruise-slider query="<?= $settings['query'] ?? ''; ?>"></wls-cruise-slider>
 		<?php
 	}
 }

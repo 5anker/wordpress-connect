@@ -1,12 +1,10 @@
 <?php
 
-namespace Elementor;
-
 if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorPlanbarLogin_Widget extends Widget_Base
+class ElementorPlanbarLogin_Widget extends \Elementor\Widget_Base
 {
 	public function get_name()
 	{

@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
 // Register the custom post type.
 function register_wls_post_types()
 {
-    $settings = (object)unserialize(get_option('connect_options'));
+    $settings = Anker_Connect::getOptions();
 
     if (!$settings->import) {
         return;

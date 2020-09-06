@@ -1,12 +1,10 @@
 <?php
 
-namespace Elementor;
-
 if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorNewsletter_Widget extends Widget_Base
+class ElementorNewsletter_Widget extends \Elementor\Widget_Base
 {
 	public function get_name()
 	{
@@ -41,7 +39,7 @@ class ElementorNewsletter_Widget extends Widget_Base
 			'privacy',
 			[
 				'label' => __('Privacy', 'anker-connect'),
-				'type' => Controls_Manager::TEXT,
+				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
 				'title' => __('', 'anker-connect')
 			]

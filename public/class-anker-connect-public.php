@@ -107,7 +107,7 @@ class Anker_Connect_Public
 
     public function enqueue_head_config()
     {
-        $settings = (object)unserialize(get_option('connect_options'));
+        $settings = Anker_Connect::getOptions();
         $defaults = [
             'token' => $settings->public_token,
             'redirects' => [],

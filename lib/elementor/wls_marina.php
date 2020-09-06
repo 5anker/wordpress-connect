@@ -1,12 +1,10 @@
 <?php
 
-namespace Elementor;
-
 if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorMarina_Widget extends Widget_Base
+class ElementorMarina_Widget extends \Elementor\Widget_Base
 {
 	public function get_name()
 	{
@@ -41,7 +39,7 @@ class ElementorMarina_Widget extends Widget_Base
 			'id',
 			[
 				'label' => __('ID', 'anker-connect'),
-				'type' => Controls_Manager::NUMBER,
+				'type' => \Elementor\Controls_Manager::NUMBER,
 				'default' => '',
 				'title' => __('', 'anker-connect'),
 			]

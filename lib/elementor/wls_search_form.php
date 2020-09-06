@@ -1,12 +1,10 @@
 <?php
 
-namespace Elementor;
-
 if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorSearchForm_Widget extends Widget_Base
+class ElementorSearchForm_Widget extends \Elementor\Widget_Base
 {
 	public function get_name()
 	{
@@ -41,7 +39,7 @@ class ElementorSearchForm_Widget extends Widget_Base
 			'query',
 			[
 				'label' => __('Query', 'anker-connect'),
-				'type' => Controls_Manager::TEXT,
+				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
 				'title' => __('', 'anker-connect')
 			]
@@ -51,7 +49,7 @@ class ElementorSearchForm_Widget extends Widget_Base
 			'fields',
 			[
 				'label' => __('Fields', 'anker-connect'),
-				'type' => Controls_Manager::TEXT,
+				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
 				'title' => __('', 'anker-connect')
 			]
@@ -61,7 +59,7 @@ class ElementorSearchForm_Widget extends Widget_Base
 			'redirect',
 			[
 				'label' => __('Redirect', 'anker-connect'),
-				'type' => Controls_Manager::TEXT,
+				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
 				'title' => __('', 'anker-connect')
 			]
@@ -71,7 +69,7 @@ class ElementorSearchForm_Widget extends Widget_Base
 			'class',
 			[
 				'label' => __('Row class', 'anker-connect'),
-				'type' => Controls_Manager::TEXT,
+				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
 				'title' => __('', 'anker-connect')
 			]

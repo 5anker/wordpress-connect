@@ -1,12 +1,10 @@
 <?php
 
-namespace Elementor;
-
 if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorNotepad_Widget extends Widget_Base
+class ElementorNotepad_Widget extends \Elementor\Widget_Base
 {
 	public function get_name()
 	{
