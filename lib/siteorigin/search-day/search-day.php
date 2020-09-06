@@ -1,8 +1,8 @@
 <?php
 
 /*
-Widget Name: Search day
-Description: Search day
+Widget Name: Search Day
+Description: Search Day
 Author: 5 Anker GmbH
 Version: 1.0
 Author URI: https://www.5-anker.com
@@ -15,9 +15,9 @@ class SiteoriginWlsSearchDay_Widget extends SiteOrigin_Widget
 	{
 		parent::__construct(
 			'wls-search-day',
-			__('Search day', 'anker-connect'),
+			__('Search Day', 'anker-connect'),
 			[
-				'description' => __('Search day', 'anker-connect'),
+				'description' => __('Search Day', 'anker-connect'),
 			],
 			[
 			],
