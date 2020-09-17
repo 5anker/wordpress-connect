@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-function anker_cron_schedules( $schedules ) {
+function anker_connect_cron_schedules( $schedules ) {
 	if ( ! isset( $schedules["5min"] ) ) {
 		$schedules["5min"] = [
 			'interval' => 5 * 60,
@@ -15,21 +15,21 @@ function anker_cron_schedules( $schedules ) {
 	return $schedules;
 }
 
-add_filter( 'cron_schedules', 'anker_cron_schedules' );
+add_filter( 'cron_schedules', 'anker_connect_cron_schedules' );
 
-if ( ! wp_next_scheduled( 'anker_schedule_hook_boats' ) ) {
-	wp_schedule_event( time(), '5min', 'anker_schedule_hook_boats' );
+if ( ! wp_next_scheduled( 'anker_connect_schedule_hook_boats' ) ) {
+	wp_schedule_event( time(), '5min', 'anker_connect_schedule_hook_boats' );
 }
 
-if ( ! wp_next_scheduled( 'anker_schedule_hook_basements' ) ) {
-	wp_schedule_event( time(), '5min', 'anker_schedule_hook_basements' );
+if ( ! wp_next_scheduled( 'anker_connect_schedule_hook_basements' ) ) {
+	wp_schedule_event( time(), '5min', 'anker_connect_schedule_hook_basements' );
 }
 
 // Hook into that action that'll fire every three minutes
-add_action( 'anker_schedule_hook_boats', 'anker_schedule_hook_boats' );
-add_action( 'anker_schedule_hook_basements', 'anker_schedule_hook_basements' );
+add_action( 'anker_connect_schedule_hook_boats', 'anker_connect_schedule_hook_boats' );
+add_action( 'anker_connect_schedule_hook_basements', 'anker_connect_schedule_hook_basements' );
 
-function anker_schedule_hook_boats( $limit = 50 ) {
+function anker_connect_schedule_hook_boats( $limit = 50 ) {
 	$settings = Anker_Connect::getOptions();
 
 	if ( ! $settings->import ) {
@@ -102,7 +102,7 @@ function anker_schedule_hook_boats( $limit = 50 ) {
 	flush_rewrite_rules();
 }
 
-function anker_schedule_hook_basements( $limit = 20 ) {
+function anker_connect_schedule_hook_basements( $limit = 20 ) {
 	$settings = Anker_Connect::getOptions();
 
 	if ( ! $settings->import ) {

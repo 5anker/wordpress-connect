@@ -4,7 +4,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorMarinas_Widget extends \Elementor\Widget_Base
+class Anker_Connect_Elementor_Wls_Marinas_Widget extends \Elementor\Widget_Base
 {
 	public function get_name()
 	{

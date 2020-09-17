@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class ElementorCruiseSlider_Widget extends \Elementor\Widget_Base {
+class Anker_Connect_Elementor_Wls_CruiseSlider_Widget extends \Elementor\Widget_Base {
 	public function get_name() {
 		return 'wls-cruise-slider';
 	}

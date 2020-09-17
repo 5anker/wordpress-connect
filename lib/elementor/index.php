@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-final class Elementor_Connect_Extension {
+final class Anker_Connect_Elementor_Extension {
 
 	/**
 	 * Plugin Version
@@ -204,22 +204,22 @@ final class Elementor_Connect_Extension {
 		// Include Widget files
 
 		$plugins = [
-			'wls_boat'               => '\ElementorBoat_Widget',
-			'wls_boats'              => '\ElementorBoats_Widget',
-			'wls_boats_grid'         => '\ElementorBoatsGrid_Widget',
-			'wls_boats_slider'       => '\ElementorBoatsSlider_Widget',
-			'wls_search'             => '\ElementorSearch_Widget',
-			'wls_search_day'         => '\ElementorSearchDay_Widget',
-			'wls_cruise_slider'      => '\ElementorCruiseSlider_Widget',
-			'wls_search_form'        => '\ElementorSearchForm_Widget',
-			'wls_newsletter'         => '\ElementorNewsletter_Widget',
-			'wls_contact_form'       => '\ElementorContactForm_Widget',
-			'wls_boat_book_calendar' => '\ElementorBoatBookCalendar_Widget',
-			'wls_marinas'            => '\ElementorMarinas_Widget',
-			'wls_marina'             => '\ElementorMarina_Widget',
-			'wls_map'                => '\ElementorMap_Widget',
-			'wls_notepad'            => '\ElementorNotepad_Widget',
-			'wls_planbar_login'      => '\ElementorPlanbarLogin_Widget',
+			'wls_boat'               => '\Anker_Connect_Elementor_Wls_Boat_Widget',
+			'wls_boats'              => '\Anker_Connect_Elementor_Wls_Boats_Widget',
+			'wls_boats_grid'         => '\Anker_Connect_Elementor_Wls_BoatsGrid_Widget',
+			'wls_boats_slider'       => '\Anker_Connect_Elementor_Wls_BoatsSlider_Widget',
+			'wls_search'             => '\Anker_Connect_Elementor_Wls_Search_Widget',
+			'wls_search_day'         => '\Anker_Connect_Elementor_Wls_SearchDay_Widget',
+			'wls_cruise_slider'      => '\Anker_Connect_Elementor_Wls_CruiseSlider_Widget',
+			'wls_search_form'        => '\Anker_Connect_Elementor_Wls_SearchForm_Widget',
+			'wls_newsletter'         => '\Anker_Connect_Elementor_Wls_Newsletter_Widget',
+			'wls_contact_form'       => '\Anker_Connect_Elementor_Wls_ContactForm_Widget',
+			'wls_boat_book_calendar' => '\Anker_Connect_Elementor_Wls_BoatBookCalendar_Widget',
+			'wls_marinas'            => '\Anker_Connect_Elementor_Wls_Marinas_Widget',
+			'wls_marina'             => '\Anker_Connect_Elementor_Wls_Marina_Widget',
+			'wls_map'                => '\Anker_Connect_Elementor_Wls_Map_Widget',
+			'wls_notepad'            => '\Anker_Connect_Elementor_Wls_Notepad_Widget',
+			'wls_planbar_login'      => '\Anker_Connect_Elementor_Wls_PlanbarLogin_Widget',
 		];
 
 		foreach ( $plugins as $plugin => $pClass ) {
@@ -267,4 +267,4 @@ final class Elementor_Connect_Extension {
 
 }
 
-Elementor_Connect_Extension::instance();
+Anker_Connect_Elementor_Extension::instance();

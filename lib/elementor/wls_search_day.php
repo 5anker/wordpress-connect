@@ -4,7 +4,7 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-class ElementorSearchDay_Widget extends \Elementor\Widget_Base
+class Anker_Connect_Elementor_Wls_SearchDay_Widget extends \Elementor\Widget_Base
 {
 	public function get_name()
 	{

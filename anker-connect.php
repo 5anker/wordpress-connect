@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       5 Anker Connect
  * Description:       Plugin to integrate the White Label Solution of 5 Anker Connect into your WordPress Website.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Jonas Imping
  * Author URI:        https://www.5-anker.com
  * License:           GPL-2.0+

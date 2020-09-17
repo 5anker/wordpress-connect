@@ -9,40 +9,36 @@ Author URI: https://www.5-anker.com
 Documentation: https://docs.5-anker.com/white-label-einbinder/buchungskalender-termine
 */
 
-class SiteoriginWlsBoatBookCalendar_Widget extends SiteOrigin_Widget
-{
-	public function __construct()
-	{
+class Anker_Connect_Wls_BoatBookCalendar_Widget extends SiteOrigin_Widget {
+	public function __construct() {
 		parent::__construct(
 			'wls-boat-book-calendar',
-			__('Boat Book Calendar', 'anker-connect'),
+			__( 'Boat Book Calendar', 'anker-connect' ),
 			[
-				'description' => __('Boat Book Calendar', 'anker-connect'),
+				'description' => __( 'Boat Book Calendar', 'anker-connect' ),
 			],
 			[
 			],
 			false,
-			plugin_dir_path(__FILE__)
+			plugin_dir_path( __FILE__ )
 		);
 	}
 
-	public function get_widget_form()
-	{
+	public function get_widget_form() {
 		return [
 			'id' => [
-				'type' => 'number',
-				'label' => __('ID', 'anker-connect'),
+				'type'    => 'number',
+				'label'   => __( 'ID', 'anker-connect' ),
 				'default' => ''
 			],
 		];
 	}
 
-	public function get_html_content($instance, $args, $template_vars, $css_name)
-	{
+	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-		<wls-boat-book-calendar id="<?= $instance['id']; ?>"></wls-boat-book-calendar>
+        <wls-boat-book-calendar id="<?= $instance['id']; ?>"></wls-boat-book-calendar>
 		<?php
 	}
 }
 
-siteorigin_widget_register('wls-boat-book-calendar', __FILE__, 'SiteoriginWlsBoatBookCalendar_Widget');
+siteorigin_widget_register( 'wls-boat-book-calendar', __FILE__, 'Anker_Connect_Wls_BoatBookCalendar_Widget' );

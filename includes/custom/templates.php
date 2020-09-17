@@ -1,6 +1,6 @@
 <?php
 
-function load_anker_templates( $template ) {
+function anker_connect_load_single_templates( $template ) {
 	global $post;
 
 	if ( $post->post_type === "boat" && $template !== locate_template( [ "single-boat.php" ] ) ) {
@@ -14,4 +14,4 @@ function load_anker_templates( $template ) {
 	return $template;
 }
 
-add_filter( 'single_template', 'load_anker_templates' );
+add_filter( 'single_template', 'anker_connect_load_single_templates' );
