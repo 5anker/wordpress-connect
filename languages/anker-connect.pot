@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 5 Anker Connect Importer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-06 12:31+0000\n"
+"POT-Creation-Date: 2020-09-17 08:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -15,53 +15,70 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.2.0; wp-5.0.3"
 
+#: includes/custom/settings.php:19 includes/custom/settings.php:38
+#: includes/custom/settings.php:45
+msgid "Action succeeded!"
+msgstr ""
+
 #. Name of the plugin
-#: includes/custom/settings.php:26
+#: includes/custom/settings.php:56
 msgid "5 Anker Connect"
 msgstr ""
 
-#: includes/custom/settings.php:30
+#: includes/custom/settings.php:60
 msgid "General"
 msgstr ""
 
-#: includes/custom/settings.php:34
+#: includes/custom/settings.php:64
 msgid "Public Token"
 msgstr ""
 
-#: includes/custom/settings.php:40
+#: includes/custom/settings.php:70
 msgid "Private Token"
 msgstr ""
 
-#: includes/custom/settings.php:46
+#: includes/custom/settings.php:76
 msgid "Activate import"
 msgstr ""
 
-#: includes/custom/settings.php:54
+#: includes/custom/settings.php:84
 msgid "Index boats and basements"
 msgstr ""
 
-#: includes/custom/settings.php:62
+#: includes/custom/settings.php:92
 msgid "Activate notepad"
 msgstr ""
 
-#: includes/custom/settings.php:69
+#: includes/custom/settings.php:99
 msgid "Additional configuration"
 msgstr ""
 
-#: includes/custom/settings.php:84
+#: includes/custom/settings.php:114
 msgid "URL"
 msgstr ""
 
-#: includes/custom/settings.php:88
+#: includes/custom/settings.php:118
 msgid "Boats URI"
 msgstr ""
 
-#: includes/custom/settings.php:95
+#: includes/custom/settings.php:125
 msgid "Basements URI"
 msgstr ""
 
-#: includes/custom/settings.php:102 includes/custom/settings.php:105
+#: includes/custom/settings.php:137
+msgid "Other"
+msgstr ""
+
+#: includes/custom/settings.php:142 includes/custom/settings.php:145
 msgid "Reset Import Status"
+msgstr ""
+
+#: includes/custom/settings.php:150 includes/custom/settings.php:153
+msgid "Truncate All 5 Anker Data"
+msgstr ""
+
+#: includes/custom/settings.php:158 includes/custom/settings.php:161
+msgid "Import all immediately"
 msgstr ""
 
 #: includes/custom/columns.php:15
@@ -307,11 +324,10 @@ msgid ""
 "WordPress Website."
 msgstr ""
 
-#. URI of the plugin
-#. Author URI of the plugin
-msgid "https://www.5-anker.com"
-msgstr ""
-
 #. Author of the plugin
 msgid "Jonas Imping"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.5-anker.com"
 msgstr ""

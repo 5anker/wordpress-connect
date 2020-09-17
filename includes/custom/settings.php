@@ -6,13 +6,43 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_action( 'tf_create_options', 'anker_load_settings' );
 
-add_action( 'wp_ajax_reset_connect_import_status', [ $this, 'reset_connect_import_status' ] );
+add_action( 'wp_ajax_reset_connect_import_status', 'reset_connect_import_status' );
+add_action( 'wp_ajax_anker_truncate_data', 'anker_truncate_data' );
+add_action( 'wp_ajax_anker_import_all_immediately', 'anker_import_all_immediately' );
 
 function reset_connect_import_status() {
 	delete_option( 'last_boat_import' );
 	delete_option( 'last_boat_import_page' );
+	delete_option( 'last_basement_import' );
+	delete_option( 'last_basement_import_page' );
 
-	wp_send_json_success( __( 'Success!', 'default' ) );
+	wp_send_json_success( __( 'Action succeeded!', 'anker-connect' ) );
+}
+
+function anker_delete_custom_posts( $post_type = 'boat' ) {
+	$posts = get_posts( array( 'post_type' => $post_type, 'numberposts' => - 1 ) );
+
+	foreach ( $posts as $post ) {
+		wp_delete_post( $post->ID, true );
+	}
+}
+
+function anker_truncate_data() {
+	anker_delete_custom_posts( 'boat' );
+	anker_delete_custom_posts( 'basement' );
+	delete_option( 'last_boat_import' );
+	delete_option( 'last_boat_import_page' );
+	delete_option( 'last_basement_import' );
+	delete_option( 'last_basement_import_page' );
+
+	wp_send_json_success( __( 'Action succeeded!', 'anker-connect' ) );
+}
+
+function anker_import_all_immediately() {
+	anker_schedule_hook_boats( 10000 );
+	anker_schedule_hook_basements( 10000 );
+
+	wp_send_json_success( __( 'Action succeeded!', 'anker-connect' ) );
 }
 
 function anker_load_settings() {
@@ -99,6 +129,16 @@ function anker_load_settings() {
 		] );
 
 		$url->createOption( [
+			'type'      => 'save',
+			'use_reset' => false,
+		] );
+
+		$other = $panel->createTab( [
+			'name' => __( 'Other', 'anker-connect' ),
+		] );
+
+
+		$other->createOption( [
 			'name'             => __( 'Reset Import Status', 'anker-connect' ),
 			'type'             => 'ajax-button',
 			'action'           => 'reset_connect_import_status',
@@ -106,9 +146,20 @@ function anker_load_settings() {
 			'success_callback' => 'ajax_success_refresh',
 		] );
 
-		$url->createOption( [
-			'type'      => 'save',
-			'use_reset' => false,
+		$other->createOption( [
+			'name'             => __( 'Truncate All 5 Anker Data', 'anker-connect' ),
+			'type'             => 'ajax-button',
+			'action'           => 'anker_truncate_data',
+			'label'            => __( 'Truncate All 5 Anker Data', 'anker-connect' ),
+			'success_callback' => 'ajax_success_refresh',
+		] );
+
+		$other->createOption( [
+			'name'             => __( 'Import all immediately', 'anker-connect' ),
+			'type'             => 'ajax-button',
+			'action'           => 'anker_import_all_immediately',
+			'label'            => __( 'Import all immediately', 'anker-connect' ),
+			'success_callback' => 'ajax_success_refresh',
 		] );
 	}
 }

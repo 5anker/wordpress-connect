@@ -29,7 +29,7 @@ if ( ! wp_next_scheduled( 'anker_schedule_hook_basements' ) ) {
 add_action( 'anker_schedule_hook_boats', 'anker_schedule_hook_boats' );
 add_action( 'anker_schedule_hook_basements', 'anker_schedule_hook_basements' );
 
-function anker_schedule_hook_boats() {
+function anker_schedule_hook_boats( $limit = 50 ) {
 	$settings = Anker_Connect::getOptions();
 
 	if ( ! $settings->import ) {
@@ -38,7 +38,11 @@ function anker_schedule_hook_boats() {
 
 	$page = get_option( 'last_boat_import_page', 1 );
 
-	if ( ! $rest = AnkerRest::get( 'rest/remote/wp/boat?limit=50&updated_at=gt:' . get_option( 'last_boat_import', '2015-01-01 00:00:00' ) . '&page=' . $page ) ) {
+	if ( ! $rest = AnkerRest::get( 'rest/remote/wp/boat', [
+		'limit'      => $limit,
+		'updated_at' => 'gt:' . get_option( 'last_boat_import', '2015-01-01 00:00:00' ),
+		'page'       => $page
+	] ) ) {
 		return;
 	}
 
@@ -98,7 +102,7 @@ function anker_schedule_hook_boats() {
 	flush_rewrite_rules();
 }
 
-function anker_schedule_hook_basements() {
+function anker_schedule_hook_basements( $limit = 20 ) {
 	$settings = Anker_Connect::getOptions();
 
 	if ( ! $settings->import ) {
@@ -107,7 +111,11 @@ function anker_schedule_hook_basements() {
 
 	$page = get_option( 'last_basement_import_page', 1 );
 
-	if ( ! $rest = AnkerRest::get( 'rest/remote/wp/basement?limit=20&updated_at=gt:' . get_option( 'last_basement_import', '2015-01-01 00:00:00' ) . '&page=' . $page ) ) {
+	if ( ! $rest = AnkerRest::get( 'rest/remote/wp/basement', [
+		'limit'      => $limit,
+		'updated_at' => 'gt:' . get_option( 'last_basement_import', '2015-01-01 00:00:00' ),
+		'page'       => $page
+	] ) ) {
 		return;
 	}
 

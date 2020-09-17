@@ -7,10 +7,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 class AnkerRest {
 	public static function exec( $method, $url, $obj = [] ) {
 		$settings = Anker_Connect::getOptions();
-
-		$curl = curl_init();
+		$body     = [];
 
 		switch ( $method ) {
+			case 'DELETE':
 			case 'GET':
 				if ( strpos( $url, '?' ) === false && ! empty( $obj ) ) {
 					$url .= '?' . http_build_query( $obj );
@@ -18,38 +18,23 @@ class AnkerRest {
 				break;
 
 			case 'POST':
-				curl_setopt( $curl, CURLOPT_POST, true );
-				curl_setopt( $curl, CURLOPT_POSTFIELDS, json_encode( $obj ) );
-				break;
-
 			case 'PUT':
-			case 'DELETE':
 			default:
-				curl_setopt( $curl, CURLOPT_CUSTOMREQUEST, strtoupper( $method ) ); // method
-				curl_setopt( $curl, CURLOPT_POSTFIELDS, json_encode( $obj ) ); // body
+				$body = $obj;
 		}
 
-		$headers = [
-			'Accept: application/json',
-			'Content-Type: application/json',
-		];
+		$args = array(
+			'method'  => $method,
+			'body'    => $body,
+			'headers' => array(
+				'Authorization' => 'Bearer ' . $settings->private_token,
+				'Accept'        => 'application/json',
+				'Content-Type'  => 'application/json',
+			)
+		);
 
-		$headers[] = 'Authorization: Bearer ' . $settings->private_token;
-
-		curl_setopt( $curl, CURLOPT_RETURNTRANSFER, true );
-		curl_setopt( $curl, CURLOPT_HTTPHEADER, $headers );
-		curl_setopt( $curl, CURLOPT_URL, 'https://connect.5-anker.com/' . $url );
-		curl_setopt( $curl, CURLOPT_HEADER, true );
-		curl_setopt( $curl, CURLOPT_SSL_VERIFYPEER, false );
-
-		// Exec
-		$response = curl_exec( $curl );
-		$info     = curl_getinfo( $curl );
-		curl_close( $curl );
-
-		// Data
-		$header = trim( substr( $response, 0, $info['header_size'] ) );
-		$body   = substr( $response, $info['header_size'] );
+		$response = wp_remote_request( 'https://connect.5-anker.com/' . $url, $args );
+		$body     = wp_remote_retrieve_body( $response );
 
 		return json_decode( $body );
 	}
