@@ -20,36 +20,34 @@
  * @subpackage Anker_Connect/includes
  * @author     Jonas Imping <j.imping@5-anker.com>
  */
-class Anker_Connect_Activator
-{
+class Anker_Connect_Activator {
 
-    /**
-     * Short Description. (use period)
-     *
-     * Long Description.
-     *
-     * @since    1.0.0
-     */
-    public static function activate()
-    {
-        $defaults = [
-            'private_token' => '',
-            'public_token' => '',
-            'config' => '{}',
-            'basements_uri' => 'marina',
-            'boats_uri' => 'yacht',
-            'import' => false,
-            'index' => false,
-            'notepad' => false
-        ];
+	/**
+	 * Short Description. (use period)
+	 *
+	 * Long Description.
+	 *
+	 * @since    1.0.0
+	 */
+	public static function activate() {
+		$defaults = [
+			'private_token' => '',
+			'public_token'  => '',
+			'config'        => '{}',
+			'basements_uri' => 'marina',
+			'boats_uri'     => 'yacht',
+			'import'        => false,
+			'index'         => false,
+			'notepad'       => false
+		];
 
-        if (!$options = get_option('connect_options')) {
-            add_option('connect_options', serialize($defaults));
-        } else {
-            update_option('connect_options', serialize(array_merge($defaults, unserialize($options))));
-        }
+		if ( ! $options = get_option( 'connect_options' ) ) {
+			add_option( 'connect_options', serialize( $defaults ) );
+		} else {
+			update_option( 'connect_options', serialize( array_merge( $defaults, $options ) ) );
+		}
 
-        flush_rewrite_rules();
-    }
+		flush_rewrite_rules();
+	}
 
 }

@@ -41,7 +41,7 @@ final class Anker_Connect_Elementor_Extension {
 	 * @access private
 	 * @static
 	 *
-	 * @var Elementor_Test_Extension The single instance of the class.
+	 * @var Anker_Connect_Elementor_Extension The single instance of the class.
 	 */
 	private static $_instance = null;
 
@@ -50,7 +50,7 @@ final class Anker_Connect_Elementor_Extension {
 	 *
 	 * Ensures only one instance of the class is loaded or can be loaded.
 	 *
-	 * @return Elementor_Test_Extension An instance of the class.
+	 * @return Anker_Connect_Elementor_Extension An instance of the class.
 	 * @since 1.0.0
 	 *
 	 * @access public
@@ -134,7 +134,7 @@ final class Anker_Connect_Elementor_Extension {
 		$message = sprintf(
 		/* translators: 1: Plugin name 2: Elementor */
 			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-test-extension' ),
-			'<strong>' . esc_html__( 'Elementor Test Extension', 'elementor-test-extension' ) . '</strong>',
+			'<strong>' . esc_html__( '5 Anker Connect Elementor Extension', 'anker-connect' ) . '</strong>',
 			'<strong>' . esc_html__( 'Elementor', 'elementor-test-extension' ) . '</strong>'
 		);
 

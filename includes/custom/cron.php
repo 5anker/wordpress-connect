@@ -46,6 +46,10 @@ function anker_connect_schedule_hook_boats( $limit = 50 ) {
 		return;
 	}
 
+	if ( ! isset( $rest->data ) ) {
+		return;
+	}
+
 	foreach ( $rest->data as $boat ) {
 		$postID = 0;
 		$post   = null;
@@ -116,6 +120,10 @@ function anker_connect_schedule_hook_basements( $limit = 20 ) {
 		'updated_at' => 'gt:' . get_option( 'last_basement_import', '2015-01-01 00:00:00' ),
 		'page'       => $page
 	] ) ) {
+		return;
+	}
+
+	if ( ! isset( $rest->data ) ) {
 		return;
 	}
 

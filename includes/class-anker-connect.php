@@ -236,7 +236,7 @@ class Anker_Connect {
 			'import'        => false,
 			'index'         => false,
 			'notepad'       => false,
-		], (array) unserialize( get_option( 'connect_options' ) ) );
+		], (array)( get_option( 'connect_options' ) ) );
 
 		return (object) $settings;
 	}

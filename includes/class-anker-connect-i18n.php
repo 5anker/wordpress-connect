@@ -43,5 +43,4 @@ class Anker_Connect_i18n {
 	}
 
 
-
 }
