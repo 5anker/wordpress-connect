@@ -98,11 +98,6 @@ class Anker_Connect {
 	 */
 	private function load_dependencies() {
 		/**
-		 * The class responsible for managing the settings of the plugin.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/titan-framework/titan-framework-embedder.php';
-
-		/**
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
@@ -132,7 +127,6 @@ class Anker_Connect {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/post-types.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/columns.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/templates.php';
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/settings.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/widgets.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/blocks.php';
 
@@ -166,6 +160,8 @@ class Anker_Connect {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'anker_connect_add_plugin_page' );
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'anker_connect_page_init' );
 	}
 
 	/**
