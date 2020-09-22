@@ -24,6 +24,7 @@ function wls_marina_block_init() {
 		'wls-marina-block-editor',
 		plugins_url( $index_js, __FILE__ ),
 		array(
+			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',

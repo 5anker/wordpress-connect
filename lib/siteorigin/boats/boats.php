@@ -13,9 +13,9 @@ class Anker_Connect_Wls_Boats_Widget extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-boats',
-			__( 'Boats', 'anker-connect' ),
+			__( 'Boats', '5-anker-connect' ),
 			[
-				'description' => __( 'Boats', 'anker-connect' ),
+				'description' => __( 'Boats', '5-anker-connect' ),
 			],
 			[
 			],
@@ -28,7 +28,7 @@ class Anker_Connect_Wls_Boats_Widget extends SiteOrigin_Widget {
 		return [
 			'query' => [
 				'type'    => 'text',
-				'label'   => __( 'Query', 'anker-connect' ),
+				'label'   => __( 'Query', '5-anker-connect' ),
 				'default' => ''
 			],
 		];

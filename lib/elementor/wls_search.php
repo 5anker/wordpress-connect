@@ -13,7 +13,7 @@ class Anker_Connect_Elementor_Wls_Search_Widget extends \Elementor\Widget_Base
 
 	public function get_title()
 	{
-		return __('Search', 'anker-connect');
+		return __('Search', '5-anker-connect');
 	}
 
 	public function get_categories()
@@ -31,27 +31,27 @@ class Anker_Connect_Elementor_Wls_Search_Widget extends \Elementor\Widget_Base
 		$this->start_controls_section(
 			'settings_section',
 			[
-				'label' => esc_html__('Settings', 'anker-connect'),
+				'label' => esc_html__('Settings', '5-anker-connect'),
 			]
 		);
 
 		$this->add_control(
 			'query',
 			[
-				'label' => __('Query', 'anker-connect'),
+				'label' => __('Query', '5-anker-connect'),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', 'anker-connect')
+				'title' => __('', '5-anker-connect')
 			]
 		);
 
 		$this->add_control(
 			'fields',
 			[
-				'label' => __('Fields', 'anker-connect'),
+				'label' => __('Fields', '5-anker-connect'),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', 'anker-connect')
+				'title' => __('', '5-anker-connect')
 			]
 		);
 

@@ -13,9 +13,9 @@ class Anker_Connect_Wls_Newsletter_Widget extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-newsletter',
-			__( 'Newsletter', 'anker-connect' ),
+			__( 'Newsletter', '5-anker-connect' ),
 			[
-				'description' => __( 'Newsletter', 'anker-connect' ),
+				'description' => __( 'Newsletter', '5-anker-connect' ),
 			],
 			[
 			],
@@ -28,7 +28,7 @@ class Anker_Connect_Wls_Newsletter_Widget extends SiteOrigin_Widget {
 		return [
 			'privacy' => [
 				'type'    => 'text',
-				'label'   => __( 'Privacy', 'anker-connect' ),
+				'label'   => __( 'Privacy', '5-anker-connect' ),
 				'default' => ''
 			],
 		];

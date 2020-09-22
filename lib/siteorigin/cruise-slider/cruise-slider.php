@@ -13,9 +13,9 @@ class Anker_Connect_Wls_CruiseSlider_Widget extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-cruise-slider',
-			__( 'Cruise Slider', 'anker-connect' ),
+			__( 'Cruise Slider', '5-anker-connect' ),
 			[
-				'description' => __( 'Cruise Slider', 'anker-connect' ),
+				'description' => __( 'Cruise Slider', '5-anker-connect' ),
 			],
 			[
 			],
@@ -28,7 +28,7 @@ class Anker_Connect_Wls_CruiseSlider_Widget extends SiteOrigin_Widget {
 		return [
 			'query' => [
 				'type'    => 'text',
-				'label'   => __( 'Query', 'anker-connect' ),
+				'label'   => __( 'Query', '5-anker-connect' ),
 				'default' => ''
 			],
 		];

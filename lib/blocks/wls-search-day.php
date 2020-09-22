@@ -26,6 +26,7 @@ function wls_search_day_block_init()
 		'wls-search-day-block-editor',
 		plugins_url($index_js, __FILE__),
 		[
+			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',

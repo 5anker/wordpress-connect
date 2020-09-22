@@ -13,9 +13,9 @@ class Anker_Connect_Wls_BoatBookCalendar_Widget extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-boat-book-calendar',
-			__( 'Boat Book Calendar', 'anker-connect' ),
+			__( 'Boat Book Calendar', '5-anker-connect' ),
 			[
-				'description' => __( 'Boat Book Calendar', 'anker-connect' ),
+				'description' => __( 'Boat Book Calendar', '5-anker-connect' ),
 			],
 			[
 			],
@@ -28,7 +28,7 @@ class Anker_Connect_Wls_BoatBookCalendar_Widget extends SiteOrigin_Widget {
 		return [
 			'id' => [
 				'type'    => 'number',
-				'label'   => __( 'ID', 'anker-connect' ),
+				'label'   => __( 'ID', '5-anker-connect' ),
 				'default' => ''
 			],
 		];

@@ -24,6 +24,7 @@ function wls_contact_form_block_init() {
 		'wls-contact-form-block-editor',
 		plugins_url( $index_js, __FILE__ ),
 		array(
+			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',

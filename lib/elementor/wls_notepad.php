@@ -13,7 +13,7 @@ class Anker_Connect_Elementor_Wls_Notepad_Widget extends \Elementor\Widget_Base
 
 	public function get_title()
 	{
-		return __('Notepad', 'anker-connect');
+		return __('Notepad', '5-anker-connect');
 	}
 
 	public function get_categories()

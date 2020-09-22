@@ -24,6 +24,7 @@ function wls_boats_slider_block_init() {
 		'wls-boats-slider-block-editor',
 		plugins_url( $index_js, __FILE__ ),
 		array(
+			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',

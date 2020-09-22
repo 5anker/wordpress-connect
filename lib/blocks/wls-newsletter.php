@@ -24,6 +24,7 @@ function wls_newsletter_block_init() {
 		'wls-newsletter-block-editor',
 		plugins_url( $index_js, __FILE__ ),
 		array(
+			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',

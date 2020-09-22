@@ -2,3 +2,19 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+#anker-connect-plugin-options .tab-content {
+    background: #fff;
+    border-color: #ccc;
+    border-style: solid;
+    padding: 10px;
+    border-width: 0 1px 1px 1px;
+}
+
+#anker-connect-plugin-options .nav-tab-wrapper .nav-tab-active {
+    background: #fff;
+}
+
+#anker-connect-plugin-options .current-tab-tools input {
+    margin-right: 10px;
+}

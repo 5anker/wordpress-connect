@@ -8,7 +8,7 @@ function anker_connect_cron_schedules( $schedules ) {
 	if ( ! isset( $schedules["5min"] ) ) {
 		$schedules["5min"] = [
 			'interval' => 5 * 60,
-			'display'  => __( 'Once every 5 minutes', 'anker-connect' ),
+			'display'  => __( 'Once every 5 minutes', '5-anker-connect' ),
 		];
 	}
 

@@ -13,7 +13,7 @@ class Anker_Connect_Elementor_Wls_PlanbarLogin_Widget extends \Elementor\Widget_
 
 	public function get_title()
 	{
-		return __('Planbar login', 'anker-connect');
+		return __('Planbar login', '5-anker-connect');
 	}
 
 	public function get_categories()

@@ -92,7 +92,7 @@ final class Anker_Connect_Elementor_Extension {
 	public function init() {
 		// Check if Elementor installed and activated
 		if ( ! did_action( 'elementor/loaded' ) ) {
-			add_action( 'admin_notices', [ $this, 'admin_notice_missing_main_plugin' ] );
+			// add_action( 'admin_notices', [ $this, 'admin_notice_missing_main_plugin' ] );
 
 			return;
 		}
@@ -134,7 +134,7 @@ final class Anker_Connect_Elementor_Extension {
 		$message = sprintf(
 		/* translators: 1: Plugin name 2: Elementor */
 			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-test-extension' ),
-			'<strong>' . esc_html__( '5 Anker Connect Elementor Extension', 'anker-connect' ) . '</strong>',
+			'<strong>' . esc_html__( '5 Anker Connect Elementor Extension', '5-anker-connect' ) . '</strong>',
 			'<strong>' . esc_html__( 'Elementor', 'elementor-test-extension' ) . '</strong>'
 		);
 
@@ -259,7 +259,7 @@ final class Anker_Connect_Elementor_Extension {
 		$elements_manager->add_category(
 			'connect-wls',
 			[
-				'title' => __( 'Connect', 'anker-connect' ),
+				'title' => __( 'Connect', '5-anker-connect' ),
 				'icon'  => 'fa fa-plug',
 			]
 		);

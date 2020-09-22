@@ -13,9 +13,9 @@ class Anker_Connect_Wls_Marinas_Widget extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-marinas',
-			__( 'Marinas', 'anker-connect' ),
+			__( 'Marinas', '5-anker-connect' ),
 			[
-				'description' => __( 'Marinas', 'anker-connect' ),
+				'description' => __( 'Marinas', '5-anker-connect' ),
 			],
 			[
 			],
@@ -28,7 +28,7 @@ class Anker_Connect_Wls_Marinas_Widget extends SiteOrigin_Widget {
 		return [
 			'query' => [
 				'type'    => 'text',
-				'label'   => __( 'Query', 'anker-connect' ),
+				'label'   => __( 'Query', '5-anker-connect' ),
 				'default' => ''
 			],
 		];

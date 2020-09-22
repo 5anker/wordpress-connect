@@ -10,7 +10,7 @@ class Anker_Connect_Elementor_Wls_Boat_Widget extends \Elementor\Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Boat', 'anker-connect' );
+		return __( 'Boat', '5-anker-connect' );
 	}
 
 	public function get_categories() {
@@ -25,37 +25,37 @@ class Anker_Connect_Elementor_Wls_Boat_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'settings_section',
 			[
-				'label' => esc_html__( 'Settings', 'anker-connect' ),
+				'label' => esc_html__( 'Settings', '5-anker-connect' ),
 			]
 		);
 
 		$this->add_control(
 			'id',
 			[
-				'label'   => __( 'ID', 'anker-connect' ),
+				'label'   => __( 'ID', '5-anker-connect' ),
 				'type'    => \Elementor\Controls_Manager::NUMBER,
 				'default' => '',
-				'title'   => __( '', 'anker-connect' ),
+				'title'   => __( '', '5-anker-connect' ),
 			]
 		);
 
 		$this->add_control(
 			'sections',
 			[
-				'label'   => __( 'Sections', 'anker-connect' ),
+				'label'   => __( 'Sections', '5-anker-connect' ),
 				'type'    => \Elementor\Controls_Manager::TEXT,
 				'default' => 'title,media,props,description,additional,availabilities,prices,infos,details,basement,sidebar,contact,alternatives',
-				'title'   => __( '', 'anker-connect' ),
+				'title'   => __( '', '5-anker-connect' ),
 			]
 		);
 
 		$this->add_control(
 			'query',
 			[
-				'label'   => __( 'Query', 'anker-connect' ),
+				'label'   => __( 'Query', '5-anker-connect' ),
 				'type'    => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
-				'title'   => __( '', 'anker-connect' ),
+				'title'   => __( '', '5-anker-connect' ),
 			]
 		);
 

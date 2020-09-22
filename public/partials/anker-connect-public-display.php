@@ -8,8 +8,8 @@
  * @link       https://www.5-anker.com
  * @since      1.0.0
  *
- * @package    Anker_Connect
- * @subpackage Anker_Connect/public/partials
+ * @package    5_Anker_Connect
+ * @subpackage 5_Anker_Connect/public/partials
  */
 ?>
 

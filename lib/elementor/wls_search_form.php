@@ -13,7 +13,7 @@ class Anker_Connect_Elementor_Wls_SearchForm_Widget extends \Elementor\Widget_Ba
 
 	public function get_title()
 	{
-		return __('Search form', 'anker-connect');
+		return __('Search form', '5-anker-connect');
 	}
 
 	public function get_categories()
@@ -31,47 +31,47 @@ class Anker_Connect_Elementor_Wls_SearchForm_Widget extends \Elementor\Widget_Ba
 		$this->start_controls_section(
 			'settings_section',
 			[
-				'label' => esc_html__('Settings', 'anker-connect'),
+				'label' => esc_html__('Settings', '5-anker-connect'),
 			]
 		);
 
 		$this->add_control(
 			'query',
 			[
-				'label' => __('Query', 'anker-connect'),
+				'label' => __('Query', '5-anker-connect'),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', 'anker-connect')
+				'title' => __('', '5-anker-connect')
 			]
 		);
 
 		$this->add_control(
 			'fields',
 			[
-				'label' => __('Fields', 'anker-connect'),
+				'label' => __('Fields', '5-anker-connect'),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', 'anker-connect')
+				'title' => __('', '5-anker-connect')
 			]
 		);
 
 		$this->add_control(
 			'redirect',
 			[
-				'label' => __('Redirect', 'anker-connect'),
+				'label' => __('Redirect', '5-anker-connect'),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', 'anker-connect')
+				'title' => __('', '5-anker-connect')
 			]
 		);
 
 		$this->add_control(
 			'class',
 			[
-				'label' => __('Row class', 'anker-connect'),
+				'label' => __('Row class', '5-anker-connect'),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', 'anker-connect')
+				'title' => __('', '5-anker-connect')
 			]
 		);
 

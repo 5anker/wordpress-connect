@@ -13,9 +13,9 @@ class Anker_Connect_Wls_SearchDay_Widget extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-search-day',
-			__( 'Search Day', 'anker-connect' ),
+			__( 'Search Day', '5-anker-connect' ),
 			[
-				'description' => __( 'Search Day', 'anker-connect' ),
+				'description' => __( 'Search Day', '5-anker-connect' ),
 			],
 			[
 			],
@@ -28,7 +28,7 @@ class Anker_Connect_Wls_SearchDay_Widget extends SiteOrigin_Widget {
 		return [
 			'query' => [
 				'type'    => 'text',
-				'label'   => __( 'Query', 'anker-connect' ),
+				'label'   => __( 'Query', '5-anker-connect' ),
 				'default' => ''
 			],
 		];

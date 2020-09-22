@@ -12,9 +12,9 @@ class Anker_Connect_Wls_Finder extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-finder',
-			__( 'Finder', 'anker-connect' ),
+			__( 'Finder', '5-anker-connect' ),
 			[
-				'description' => __( 'Finder', 'anker-connect' ),
+				'description' => __( 'Finder', '5-anker-connect' ),
 			],
 			[
 
@@ -28,7 +28,7 @@ class Anker_Connect_Wls_Finder extends SiteOrigin_Widget {
 		return [
 			'query' => [
 				'type'    => 'text',
-				'label'   => __( 'Query', 'anker-connect' ),
+				'label'   => __( 'Query', '5-anker-connect' ),
 				'default' => 'group=auto'
 			],
 		];

@@ -13,9 +13,9 @@ class Anker_Connect_Wls_ContactForm_Widget extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-contact-form',
-			__( 'Contact Form', 'anker-connect' ),
+			__( 'Contact Form', '5-anker-connect' ),
 			[
-				'description' => __( 'Contact Form', 'anker-connect' ),
+				'description' => __( 'Contact Form', '5-anker-connect' ),
 			],
 			[
 			],
@@ -28,7 +28,7 @@ class Anker_Connect_Wls_ContactForm_Widget extends SiteOrigin_Widget {
 		return [
 			'privacy' => [
 				'type'    => 'text',
-				'label'   => __( 'Privacy', 'anker-connect' ),
+				'label'   => __( 'Privacy', '5-anker-connect' ),
 				'default' => ''
 			],
 		];

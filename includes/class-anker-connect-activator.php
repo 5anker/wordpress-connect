@@ -16,8 +16,8 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Anker_Connect
- * @subpackage Anker_Connect/includes
+ * @package    5_Anker_Connect
+ * @subpackage 5_Anker_Connect/includes
  * @author     Jonas Imping <j.imping@5-anker.com>
  */
 class Anker_Connect_Activator {
@@ -31,6 +31,7 @@ class Anker_Connect_Activator {
 	 */
 	public static function activate() {
 		$defaults = [
+			'module'        => 'charter',
 			'private_token' => '',
 			'public_token'  => '',
 			'config'        => '{}',
@@ -38,14 +39,14 @@ class Anker_Connect_Activator {
 			'boats_uri'     => 'yacht',
 			'import'        => false,
 			'index'         => false,
-			'notepad'       => false
+			'notepad'       => false,
 		];
 
 		if ( ! $options = get_option( 'connect_options' ) ) {
-			add_option( 'connect_options', serialize( $defaults ) );
-		} else {
-			update_option( 'connect_options', serialize( array_merge( $defaults, $options ) ) );
+			$options = [];
 		}
+
+		update_option( 'connect_options', array_merge( $defaults, $options ) );
 
 		flush_rewrite_rules();
 	}

@@ -13,9 +13,9 @@ class Anker_Connect_Wls_SearchForm_Widget extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-search-form',
-			__( 'Search Form', 'anker-connect' ),
+			__( 'Search Form', '5-anker-connect' ),
 			[
-				'description' => __( 'Search Form', 'anker-connect' ),
+				'description' => __( 'Search Form', '5-anker-connect' ),
 			],
 			[
 			],
@@ -28,25 +28,25 @@ class Anker_Connect_Wls_SearchForm_Widget extends SiteOrigin_Widget {
 		return [
 			'query' => [
 				'type'    => 'text',
-				'label'   => __( 'Query', 'anker-connect' ),
+				'label'   => __( 'Query', '5-anker-connect' ),
 				'default' => ''
 			],
 
 			'fields' => [
 				'type'    => 'text',
-				'label'   => __( 'Fields', 'anker-connect' ),
+				'label'   => __( 'Fields', '5-anker-connect' ),
 				'default' => ''
 			],
 
 			'redirect' => [
 				'type'    => 'text',
-				'label'   => __( 'Redirect', 'anker-connect' ),
+				'label'   => __( 'Redirect', '5-anker-connect' ),
 				'default' => ''
 			],
 
 			'class' => [
 				'type'    => 'text',
-				'label'   => __( 'Row Class', 'anker-connect' ),
+				'label'   => __( 'Row Class', '5-anker-connect' ),
 				'default' => ''
 			],
 		];

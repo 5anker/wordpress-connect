@@ -20,8 +20,8 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Anker_Connect
- * @subpackage Anker_Connect/includes
+ * @package    5_Anker_Connect
+ * @subpackage 5_Anker_Connect/includes
  * @author     Jonas Imping <j.imping@5-anker.com>
  */
 class Anker_Connect_i18n {
@@ -35,7 +35,7 @@ class Anker_Connect_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'anker-connect',
+			'5-anker-connect',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

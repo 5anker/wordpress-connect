@@ -13,9 +13,9 @@ class Anker_Connect_Wls_PlanbarLogin_Widget extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-planbar-login',
-			__( 'Planbar Login', 'anker-connect' ),
+			__( 'Planbar Login', '5-anker-connect' ),
 			[
-				'description' => __( 'Planbar Login', 'anker-connect' ),
+				'description' => __( 'Planbar Login', '5-anker-connect' ),
 			],
 			[
 			],

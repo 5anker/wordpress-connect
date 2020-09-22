@@ -12,7 +12,7 @@ add_action( 'admin_head', 'anker__connect_admin_column_width' );
 
 function anker_connect_set_custom_edit_boat_columns( $columns ) {
 	$columns['anker_id'] = __( 'ID' );
-	$columns['anker_mm'] = __( 'Manufacturer / Model', 'anker-connect' );
+	$columns['anker_mm'] = __( 'Manufacturer / Model', '5-anker-connect' );
 
 	return $columns;
 }
@@ -44,7 +44,7 @@ add_filter( 'manage_boat_posts_columns', 'anker_connect_add_boat_columns' );
 
 function anker_connect_custom_edit_basement_columns( $columns ) {
 	$columns['anker_id']     = __( 'ID' );
-	$columns['anker_region'] = __( 'Region', 'anker-connect' );
+	$columns['anker_region'] = __( 'Region', '5-anker-connect' );
 
 	return $columns;
 }

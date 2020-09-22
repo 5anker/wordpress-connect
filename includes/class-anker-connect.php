@@ -23,8 +23,8 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Anker_Connect
- * @subpackage Anker_Connect/includes
+ * @package    5_Anker_Connect
+ * @subpackage 5_Anker_Connect/includes
  * @author     Jonas Imping <j.imping@5-anker.com>
  */
 class Anker_Connect {
@@ -72,7 +72,7 @@ class Anker_Connect {
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'anker-connect';
+		$this->plugin_name = '5-anker-connect';
 
 		$this->load_dependencies();
 		$this->set_locale();

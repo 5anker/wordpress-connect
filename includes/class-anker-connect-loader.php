@@ -17,8 +17,8 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Anker_Connect
- * @subpackage Anker_Connect/includes
+ * @package    5_Anker_Connect
+ * @subpackage 5_Anker_Connect/includes
  * @author     Jonas Imping <j.imping@5-anker.com>
  */
 class Anker_Connect_Loader {

@@ -13,7 +13,7 @@ class Anker_Connect_Elementor_Wls_Newsletter_Widget extends \Elementor\Widget_Ba
 
 	public function get_title()
 	{
-		return __('Newsletter', 'anker-connect');
+		return __('Newsletter', '5-anker-connect');
 	}
 
 	public function get_categories()
@@ -31,17 +31,17 @@ class Anker_Connect_Elementor_Wls_Newsletter_Widget extends \Elementor\Widget_Ba
 		$this->start_controls_section(
 			'settings_section',
 			[
-				'label' => esc_html__('Settings', 'anker-connect'),
+				'label' => esc_html__('Settings', '5-anker-connect'),
 			]
 		);
 
 		$this->add_control(
 			'privacy',
 			[
-				'label' => __('Privacy', 'anker-connect'),
+				'label' => __('Privacy', '5-anker-connect'),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', 'anker-connect')
+				'title' => __('', '5-anker-connect')
 			]
 		);
 

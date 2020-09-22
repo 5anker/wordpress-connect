@@ -13,9 +13,9 @@ class Anker_Connect_Wls_Notepad_Widget extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-notepad',
-			__( 'Notepad', 'anker-connect' ),
+			__( 'Notepad', '5-anker-connect' ),
 			[
-				'description' => __( 'Notepad', 'anker-connect' ),
+				'description' => __( 'Notepad', '5-anker-connect' ),
 			],
 			[
 			],

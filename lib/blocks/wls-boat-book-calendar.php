@@ -24,6 +24,7 @@ function wls_boat_book_calendar_block_init() {
 		'wls-boat-book-calendar-block-editor',
 		plugins_url( $index_js, __FILE__ ),
 		array(
+			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',

@@ -13,7 +13,7 @@ class Anker_Connect_Elementor_Wls_Map_Widget extends \Elementor\Widget_Base
 
 	public function get_title()
 	{
-		return __('Map', 'anker-connect');
+		return __('Map', '5-anker-connect');
 	}
 
 	public function get_categories()
@@ -31,27 +31,27 @@ class Anker_Connect_Elementor_Wls_Map_Widget extends \Elementor\Widget_Base
 		$this->start_controls_section(
 			'settings_section',
 			[
-				'label' => esc_html__('Settings', 'anker-connect'),
+				'label' => esc_html__('Settings', '5-anker-connect'),
 			]
 		);
 
 		$this->add_control(
 			'lat',
 			[
-				'label' => __('Latitude', 'anker-connect'),
+				'label' => __('Latitude', '5-anker-connect'),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', 'anker-connect'),
+				'title' => __('', '5-anker-connect'),
 			]
 		);
 
 		$this->add_control(
 			'lng',
 			[
-				'label' => __('Longitude', 'anker-connect'),
+				'label' => __('Longitude', '5-anker-connect'),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __('', 'anker-connect'),
+				'title' => __('', '5-anker-connect'),
 			]
 		);
 

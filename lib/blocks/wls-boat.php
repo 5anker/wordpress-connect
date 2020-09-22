@@ -25,6 +25,7 @@ function wls_boat_block_init()
 		'wls-boat-block-editor',
 		plugins_url($index_js, __FILE__),
 		[
+			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',
@@ -54,6 +55,6 @@ function wls_boat_block_init()
 		'style'         => 'wls-boat-block',
 	]);
 
-	wp_set_script_translations('wls-boat-block-editor', 'anker-connect');
+	wp_set_script_translations('wls-boat-block-editor', '5-anker-connect');
 }
 add_action('init', 'wls_boat_block_init');

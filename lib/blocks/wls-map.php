@@ -24,6 +24,7 @@ function wls_map_block_init() {
 		'wls-map-block-editor',
 		plugins_url( $index_js, __FILE__ ),
 		array(
+			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',

@@ -13,9 +13,9 @@ class Anker_Connect_Wls_Map_Widget extends SiteOrigin_Widget {
 	public function __construct() {
 		parent::__construct(
 			'wls-map',
-			__( 'Map', 'anker-connect' ),
+			__( 'Map', '5-anker-connect' ),
 			[
-				'description' => __( 'Map', 'anker-connect' ),
+				'description' => __( 'Map', '5-anker-connect' ),
 			],
 			[
 			],
@@ -28,13 +28,13 @@ class Anker_Connect_Wls_Map_Widget extends SiteOrigin_Widget {
 		return [
 			'lat' => [
 				'type'    => 'text',
-				'label'   => __( 'Latitude', 'anker-connect' ),
+				'label'   => __( 'Latitude', '5-anker-connect' ),
 				'default' => ''
 			],
 
 			'lng' => [
 				'type'    => 'text',
-				'label'   => __( 'Longitude', 'anker-connect' ),
+				'label'   => __( 'Longitude', '5-anker-connect' ),
 				'default' => ''
 			],
 		];

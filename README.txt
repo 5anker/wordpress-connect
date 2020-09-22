@@ -1,5 +1,5 @@
 === 5 Anker Connect ===
-Contributors: 5anker
+Contributors: 5anker, splintnetde
 Donate link: https://www.5-anker.com
 Tags: 5anker, importer, charter
 Requires at least: 5.0.0
@@ -36,12 +36,19 @@ Please visit https://www.5-anker.com or feel free to contact us
 
 == Screenshots ==
 
-1. Settings Panel
-2. Frontend SearchForm Module
-3. Elementor Widgets Section
+1. Elementor SearchForm Module
+2. Elementor Search Module
+3. Connection Settings
+4. Additional Settings
+5. URL Settings
+6. Tool Settings
 
 == Changelog ==
 
+= 1.1.0 =
+Improved plugin options page
+= 1.0.1 =
+Language improvements
 = 1.0 =
 * First commit
 

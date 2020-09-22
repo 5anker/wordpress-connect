@@ -13,7 +13,7 @@ class Anker_Connect_Elementor_Wls_BoatBookCalendar_Widget extends \Elementor\Wid
 
 	public function get_title()
 	{
-		return __('Boat Book Calendar', 'anker-connect');
+		return __('Boat Book Calendar', '5-anker-connect');
 	}
 
 	public function get_categories()
@@ -31,17 +31,17 @@ class Anker_Connect_Elementor_Wls_BoatBookCalendar_Widget extends \Elementor\Wid
 		$this->start_controls_section(
 			'settings_section',
 			[
-				'label' => esc_html__('Settings', 'anker-connect'),
+				'label' => esc_html__('Settings', '5-anker-connect'),
 			]
 		);
 
 		$this->add_control(
 			'id',
 			[
-				'label' => __('ID', 'anker-connect'),
+				'label' => __('ID', '5-anker-connect'),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'default' => '',
-				'title' => __('', 'anker-connect'),
+				'title' => __('', '5-anker-connect'),
 			]
 		);
 
