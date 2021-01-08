@@ -45,7 +45,9 @@ Please visit https://www.5-anker.com or feel free to contact us
 
 == Changelog ==
 
-= 1.1.1 =
+= 1.1.2 =
+Update Yoast SEO Index
+= 1.1. =
 Wordpress compatibility
 = 1.1.0 =
 Improved plugin options page
