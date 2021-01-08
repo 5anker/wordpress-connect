@@ -41,7 +41,7 @@ function anker_connect_schedule_hook_boats( $limit = 50 ) {
 	if ( ! $rest = AnkerRest::get( 'rest/remote/wp/boat', [
 		'limit'      => $limit,
 		'updated_at' => 'gt:' . get_option( 'last_boat_import', '2015-01-01 00:00:00' ),
-		'page'       => $page
+		'page'       => $page,
 	] ) ) {
 		return;
 	}
@@ -89,6 +89,11 @@ function anker_connect_schedule_hook_boats( $limit = 50 ) {
 				'_yoast_wpseo_meta-robots-noindex'  => 1,
 				'_yoast_wpseo_meta-robots-nofollow' => 1,
 			] );
+		} else {
+			$metas = array_merge( $metas, [
+				'_yoast_wpseo_meta-robots-noindex'  => 0,
+				'_yoast_wpseo_meta-robots-nofollow' => 0,
+			] );
 		}
 
 		foreach ( $metas as $key => $value ) {
@@ -118,7 +123,7 @@ function anker_connect_schedule_hook_basements( $limit = 20 ) {
 	if ( ! $rest = AnkerRest::get( 'rest/remote/wp/basement', [
 		'limit'      => $limit,
 		'updated_at' => 'gt:' . get_option( 'last_basement_import', '2015-01-01 00:00:00' ),
-		'page'       => $page
+		'page'       => $page,
 	] ) ) {
 		return;
 	}
@@ -165,6 +170,11 @@ function anker_connect_schedule_hook_basements( $limit = 20 ) {
 			$metas = array_merge( $metas, [
 				'_yoast_wpseo_meta-robots-noindex'  => 1,
 				'_yoast_wpseo_meta-robots-nofollow' => 1,
+			] );
+		} else {
+			$metas = array_merge( $metas, [
+				'_yoast_wpseo_meta-robots-noindex'  => 0,
+				'_yoast_wpseo_meta-robots-nofollow' => 0,
 			] );
 		}
 
