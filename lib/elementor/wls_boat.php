@@ -65,7 +65,7 @@ class Anker_Connect_Elementor_Wls_Boat_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display(); ?>
         <wls-boat
-                id="<?= $settings['id'] ?? ''; ?>"<?= ! empty( $settings['sections'] ) ? " sections=\"{$settings['sections']}\"" : ''; ?><?= ! empty( $settings['query'] ) ? " query=\"{$settings['query']}\"" : ''; ?>></wls-boat>
+                id="<?= $settings['id'] ?? '' ?>"<?= ! empty( $settings['sections'] ) ? " sections=\"{$settings['sections']}\"" : '' ?><?= ! empty( $settings['query'] ) ? " query=\"{$settings['query']}\"" : '' ?>></wls-boat>
 		<?php
 	}
 }

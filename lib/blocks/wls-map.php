@@ -23,12 +23,12 @@ function wls_map_block_init() {
 	wp_register_script(
 		'wls-map-block-editor',
 		plugins_url( $index_js, __FILE__ ),
-		array(
+		[
 			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',
-		),
+		],
 		filemtime( "$dir/$index_js" )
 	);
 
@@ -36,22 +36,25 @@ function wls_map_block_init() {
 	wp_register_style(
 		'wls-map-block-editor',
 		plugins_url( $editor_css, __FILE__ ),
-		array(),
+		[],
 		filemtime( "$dir/$editor_css" )
 	);
 
+	/*
 	$style_css = 'wls-map/style.css';
 	wp_register_style(
 		'wls-map-block',
 		plugins_url( $style_css, __FILE__ ),
-		array(),
+		[],
 		filemtime( "$dir/$style_css" )
 	);
+	*/
 
-	register_block_type( 'anker-connect/wls-map', array(
+	register_block_type( 'anker-connect/wls-map', [
 		'editor_script' => 'wls-map-block-editor',
 		'editor_style'  => 'wls-map-block-editor',
 		'style'         => 'wls-map-block',
-	) );
+	] );
 }
+
 add_action( 'init', 'wls_map_block_init' );

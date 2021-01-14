@@ -23,12 +23,12 @@ function wls_marina_block_init() {
 	wp_register_script(
 		'wls-marina-block-editor',
 		plugins_url( $index_js, __FILE__ ),
-		array(
+		[
 			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',
-		),
+		],
 		filemtime( "$dir/$index_js" )
 	);
 
@@ -36,22 +36,25 @@ function wls_marina_block_init() {
 	wp_register_style(
 		'wls-marina-block-editor',
 		plugins_url( $editor_css, __FILE__ ),
-		array(),
+		[],
 		filemtime( "$dir/$editor_css" )
 	);
 
+	/*
 	$style_css = 'wls-marina/style.css';
 	wp_register_style(
 		'wls-marina-block',
 		plugins_url( $style_css, __FILE__ ),
-		array(),
+		[],
 		filemtime( "$dir/$style_css" )
 	);
+	*/
 
-	register_block_type( 'anker-connect/wls-marina', array(
+	register_block_type( 'anker-connect/wls-marina', [
 		'editor_script' => 'wls-marina-block-editor',
 		'editor_style'  => 'wls-marina-block-editor',
 		'style'         => 'wls-marina-block',
-	) );
+	] );
 }
+
 add_action( 'init', 'wls_marina_block_init' );

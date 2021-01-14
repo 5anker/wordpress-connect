@@ -5,7 +5,7 @@ Tags: 5anker, importer, charter
 Requires at least: 5.0.0
 Requires PHP: 7.2
 Tested up to: 5.6
-Stable tag: 1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,7 +21,7 @@ Features:
 - Imports boats and basements on demand
 - Elementor widgets
 - SiteOrigin widgets
-- Gutenberg widgets
+- Gutenberg blocks
 
 == Installation ==
 
@@ -45,9 +45,11 @@ Please visit https://www.5-anker.com or feel free to contact us
 
 == Changelog ==
 
+= 1.1.3 =
+Do not embed empty Gutenberg Block stylesheets
 = 1.1.2 =
 Update Yoast SEO Index
-= 1.1. =
+= 1.1.1 =
 Wordpress compatibility
 = 1.1.0 =
 Improved plugin options page

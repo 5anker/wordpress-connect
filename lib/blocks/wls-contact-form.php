@@ -23,12 +23,12 @@ function wls_contact_form_block_init() {
 	wp_register_script(
 		'wls-contact-form-block-editor',
 		plugins_url( $index_js, __FILE__ ),
-		array(
+		[
 			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',
-		),
+		],
 		filemtime( "$dir/$index_js" )
 	);
 
@@ -36,22 +36,25 @@ function wls_contact_form_block_init() {
 	wp_register_style(
 		'wls-contact-form-block-editor',
 		plugins_url( $editor_css, __FILE__ ),
-		array(),
+		[],
 		filemtime( "$dir/$editor_css" )
 	);
 
+	/*
 	$style_css = 'wls-contact-form/style.css';
 	wp_register_style(
 		'wls-contact-form-block',
 		plugins_url( $style_css, __FILE__ ),
-		array(),
+		[],
 		filemtime( "$dir/$style_css" )
 	);
+	*/
 
-	register_block_type( 'anker-connect/wls-contact-form', array(
+	register_block_type( 'anker-connect/wls-contact-form', [
 		'editor_script' => 'wls-contact-form-block-editor',
 		'editor_style'  => 'wls-contact-form-block-editor',
-		'style'         => 'wls-contact-form-block',
-	) );
+		// 'style'         => 'wls-contact-form-block',
+	] );
 }
+
 add_action( 'init', 'wls_contact_form_block_init' );

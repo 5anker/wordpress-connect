@@ -23,12 +23,12 @@ function wls_notepad_block_init() {
 	wp_register_script(
 		'wls-notepad-block-editor',
 		plugins_url( $index_js, __FILE__ ),
-		array(
+		[
 			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',
-		),
+		],
 		filemtime( "$dir/$index_js" )
 	);
 
@@ -36,22 +36,25 @@ function wls_notepad_block_init() {
 	wp_register_style(
 		'wls-notepad-block-editor',
 		plugins_url( $editor_css, __FILE__ ),
-		array(),
+		[],
 		filemtime( "$dir/$editor_css" )
 	);
 
+	/*
 	$style_css = 'wls-notepad/style.css';
 	wp_register_style(
 		'wls-notepad-block',
 		plugins_url( $style_css, __FILE__ ),
-		array(),
+		[],
 		filemtime( "$dir/$style_css" )
 	);
+	*/
 
-	register_block_type( 'anker-connect/wls-notepad', array(
+	register_block_type( 'anker-connect/wls-notepad', [
 		'editor_script' => 'wls-notepad-block-editor',
 		'editor_style'  => 'wls-notepad-block-editor',
-		'style'         => 'wls-notepad-block',
-	) );
+		// 'style'         => 'wls-notepad-block',
+	] );
 }
+
 add_action( 'init', 'wls_notepad_block_init' );

@@ -12,48 +12,50 @@
  *
  * @see https://wordpress.org/gutenberg/handbook/blocks/writing-your-first-block-type/#enqueuing-block-scripts
  */
-function wls_search_block_init()
-{
+function wls_search_block_init() {
 	// Skip block registration if Gutenberg is not enabled/merged.
-	if (! function_exists('register_block_type')) {
+	if ( ! function_exists( 'register_block_type' ) ) {
 		return;
 	}
 
-	$dir = dirname(__FILE__);
+	$dir = dirname( __FILE__ );
 
 	$index_js = 'wls-search/index.js';
 	wp_register_script(
 		'wls-search-block-editor',
-		plugins_url($index_js, __FILE__),
+		plugins_url( $index_js, __FILE__ ),
 		[
 			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',
 		],
-		filemtime("$dir/$index_js")
+		filemtime( "$dir/$index_js" )
 	);
 
 	$editor_css = 'wls-search/editor.css';
 	wp_register_style(
 		'wls-search-block-editor',
-		plugins_url($editor_css, __FILE__),
+		plugins_url( $editor_css, __FILE__ ),
 		[],
-		filemtime("$dir/$editor_css")
+		filemtime( "$dir/$editor_css" )
 	);
 
+	/*
 	$style_css = 'wls-search/style.css';
 	wp_register_style(
 		'wls-search-block',
-		plugins_url($style_css, __FILE__),
+		plugins_url( $style_css, __FILE__ ),
 		[],
-		filemtime("$dir/$style_css")
+		filemtime( "$dir/$style_css" )
 	);
+	*/
 
-	register_block_type('anker-connect/wls-search', [
+	register_block_type( 'anker-connect/wls-search', [
 		'editor_script' => 'wls-search-block-editor',
 		'editor_style'  => 'wls-search-block-editor',
-		'style'         => 'wls-search-block',
-	]);
+		// 'style'         => 'wls-search-block',
+	] );
 }
-add_action('init', 'wls_search_block_init');
+
+add_action( 'init', 'wls_search_block_init' );

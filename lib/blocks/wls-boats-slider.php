@@ -23,12 +23,12 @@ function wls_boats_slider_block_init() {
 	wp_register_script(
 		'wls-boats-slider-block-editor',
 		plugins_url( $index_js, __FILE__ ),
-		array(
+		[
 			'wp-editor',
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',
-		),
+		],
 		filemtime( "$dir/$index_js" )
 	);
 
@@ -36,22 +36,25 @@ function wls_boats_slider_block_init() {
 	wp_register_style(
 		'wls-boats-slider-block-editor',
 		plugins_url( $editor_css, __FILE__ ),
-		array(),
+		[],
 		filemtime( "$dir/$editor_css" )
 	);
 
+	/*
 	$style_css = 'wls-boats-slider/style.css';
 	wp_register_style(
 		'wls-boats-slider-block',
 		plugins_url( $style_css, __FILE__ ),
-		array(),
+		[],
 		filemtime( "$dir/$style_css" )
 	);
+	*/
 
-	register_block_type( 'anker-connect/wls-boats-slider', array(
+	register_block_type( 'anker-connect/wls-boats-slider', [
 		'editor_script' => 'wls-boats-slider-block-editor',
 		'editor_style'  => 'wls-boats-slider-block-editor',
-		'style'         => 'wls-boats-slider-block',
-	) );
+		// 'style'         => 'wls-boats-slider-block',
+	] );
 }
+
 add_action( 'init', 'wls_boats_slider_block_init' );
