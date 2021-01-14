@@ -71,7 +71,7 @@ class Anker_Connect_Public {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/anker-connect-public.css', [], $this->version, 'all' );
+		// wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/anker-connect-public.css', [], $this->version, 'all' );
 	}
 
 	/**
@@ -94,8 +94,8 @@ class Anker_Connect_Public {
 		$date   = date( 'y.n.j.G' );
 		$module = Anker_Connect::getOptions()->module;
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/anker-connect-public.js', [ 'jquery' ], $this->version, false );
-		wp_enqueue_script( $this->plugin_name . 'widget-wls', "https://wls.5-anker.com/{$module}/app.js?v={$date}", null, null, true );
+		// wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/anker-connect-public.js', [ 'jquery' ], $this->version, false );
+		wp_enqueue_script( $this->plugin_name . '-wls', "https://wls.5-anker.com/{$module}/app.js?v={$date}", null, null, true );
 	}
 
 	public function enqueue_head_config() {
