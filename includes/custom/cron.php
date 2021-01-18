@@ -29,7 +29,7 @@ if ( ! wp_next_scheduled( 'anker_connect_schedule_hook_basements' ) ) {
 add_action( 'anker_connect_schedule_hook_boats', 'anker_connect_schedule_hook_boats' );
 add_action( 'anker_connect_schedule_hook_basements', 'anker_connect_schedule_hook_basements' );
 
-function anker_connect_schedule_hook_boats( $limit = 50 ) {
+function anker_connect_schedule_hook_boats( int $limit = 50 ) {
 	$settings = Anker_Connect::getOptions();
 
 	if ( ! $settings->import ) {
@@ -42,6 +42,7 @@ function anker_connect_schedule_hook_boats( $limit = 50 ) {
 		'limit'      => $limit,
 		'updated_at' => 'gt:' . get_option( 'last_boat_import', '2015-01-01 00:00:00' ),
 		'page'       => $page,
+		'force'      => true,
 	] ) ) {
 		return;
 	}
@@ -124,6 +125,7 @@ function anker_connect_schedule_hook_basements( $limit = 20 ) {
 		'limit'      => $limit,
 		'updated_at' => 'gt:' . get_option( 'last_basement_import', '2015-01-01 00:00:00' ),
 		'page'       => $page,
+		'force'      => true,
 	] ) ) {
 		return;
 	}

@@ -70,7 +70,6 @@ class Anker_Connect_Public {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-
 		// wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/anker-connect-public.css', [], $this->version, 'all' );
 	}
 
@@ -98,6 +97,47 @@ class Anker_Connect_Public {
 		wp_enqueue_script( $this->plugin_name . '-wls', "https://wls.5-anker.com/{$module}/app.js?v={$date}", null, null, true );
 	}
 
+	/**
+	 * Adds shortcodes to frontend
+	 */
+	public function add_shortcodes() {
+		$plugins = [
+			'wls_boat'               => 'Boat',
+			'wls_boats'              => 'Boats',
+			'wls_boats_grid'         => 'BoatsGrid',
+			'wls_boats_slider'       => 'BoatsSlider',
+			'wls_search'             => 'Search',
+			'wls_search_day'         => 'SearchDay',
+			'wls_cruise_slider'      => 'CruiseSlider',
+			'wls_search_form'        => 'SearchForm',
+			'wls_newsletter'         => 'Newsletter',
+			'wls_contact_form'       => 'ContactForm',
+			'wls_boat_book_calendar' => 'BoatBookCalendar',
+			'wls_marinas'            => 'Marinas',
+			'wls_marina'             => 'Marina',
+			'wls_map'                => 'Map',
+			'wls_notepad'            => 'Notepad',
+			'wls_planbar_login'      => 'PlanbarLogin',
+		];
+
+
+		foreach ( $plugins as $plugin => $name ) {
+			$nn = str_replace( '_', '-', $plugin );
+
+			add_shortcode( $nn, function ( $atts ) use ( $nn ) {
+				//Use & for modify current item in array
+				array_walk( $atts, function ( &$item, $key ) {
+					$item = $key . '="' . $item . '"';
+				} );
+
+				return sprintf( '<%s %s></%s>', $nn, implode( ' ', $atts ), $nn );
+			} );
+		}
+	}
+
+	/**
+	 *
+	 */
 	public function enqueue_head_config() {
 		$settings = Anker_Connect::getOptions();
 		$defaults = [
@@ -121,7 +161,7 @@ class Anker_Connect_Public {
 		if ( $conf === null && json_last_error() !== JSON_ERROR_NONE ) {
 			$config = $defaults;
 		} else {
-			$config = array_merge( $defaults, $conf );
+			$config = array_merge_recursive( $defaults, $conf );
 		}
 
 		echo '<script type="text/javascript">window.connect = ' . json_encode( $config ) . '</script>';

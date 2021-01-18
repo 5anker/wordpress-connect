@@ -29,14 +29,14 @@ class Anker_Connect_Wls_Boats_Widget extends SiteOrigin_Widget {
 			'query' => [
 				'type'    => 'text',
 				'label'   => __( 'Query', '5-anker-connect' ),
-				'default' => ''
+				'default' => '',
 			],
 		];
 	}
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-boats query="<?= $instance['query']; ?>"></wls-boats>
+        <wls-boats query="<?= $instance['query'] ?>"></wls-boats>
 		<?php
 	}
 }

@@ -34,11 +34,11 @@ class Anker_Connect_Activator {
 			'module'        => 'charter',
 			'private_token' => '',
 			'public_token'  => '',
-			'config'        => '{}',
+			'config'        => '{"redirects":{"form":"/boot-mieten/","boat":"/yacht/{slug}/","booking":"/yacht/{slug}/?date_from={date_from}&date_to={date_to}&duration={duration}","marina":"/marina/{slug}/"}}',
 			'basements_uri' => 'marina',
 			'boats_uri'     => 'yacht',
 			'import'        => false,
-			'index'         => false,
+			'index'         => true,
 			'notepad'       => false,
 		];
 

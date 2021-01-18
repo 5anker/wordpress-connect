@@ -75,7 +75,9 @@ class Anker_Connect {
 		$this->plugin_name = '5-anker-connect';
 
 		$this->load_dependencies();
+		$this->set_plugin_settings_link();
 		$this->set_locale();
+		$this->load_custom_dependencies();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
 	}
@@ -120,8 +122,13 @@ class Anker_Connect {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-anker-connect-public.php';
 
-		/** Custom Stuff loader */
+		$this->loader = new Anker_Connect_Loader();
+	}
 
+	/**
+	 * Custom Stuff loader
+	 */
+	public function load_custom_dependencies() {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/rest.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/cron.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/post-types.php';
@@ -129,8 +136,25 @@ class Anker_Connect {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/templates.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/widgets.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/custom/blocks.php';
+	}
 
-		$this->loader = new Anker_Connect_Loader();
+	/**
+	 *
+	 */
+	public function set_plugin_settings_link() {
+		$plugin = $this->get_plugin_name() . '/anker-connect.php';
+
+		$this->loader->add_filter( 'plugin_action_links_' . $plugin, $this, 'set_settings_link' );
+	}
+
+	/**
+	 * @return mixed
+	 */
+	public function set_settings_link( $links ) {
+		$settings_link = '<a href="options-general.php?page=5-anker-connect">' . __( 'Settings' ) . '</a>';
+		array_unshift( $links, $settings_link );
+
+		return $links;
 	}
 
 	/**
@@ -178,6 +202,7 @@ class Anker_Connect {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+		$this->loader->add_action( 'init', $plugin_public, 'add_shortcodes' );
 	}
 
 	/**
@@ -236,7 +261,7 @@ class Anker_Connect {
 			'import'        => false,
 			'index'         => false,
 			'notepad'       => false,
-		], (array)( get_option( 'connect_options' ) ) );
+		], (array) ( get_option( 'connect_options' ) ) );
 
 		return (object) $settings;
 	}

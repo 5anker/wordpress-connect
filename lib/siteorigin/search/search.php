@@ -29,14 +29,20 @@ class Anker_Connect_Wls_Search_Widget extends SiteOrigin_Widget {
 			'query' => [
 				'type'    => 'text',
 				'label'   => __( 'Query', '5-anker-connect' ),
-				'default' => ''
+				'default' => '',
+                'placeholder' => 'group=auto'
+			],
+			'fields' => [
+				'type'    => 'text',
+				'label'   => __( 'Fields', '5-anker-connect' ),
+				'default' => '',
 			],
 		];
 	}
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-search<?= ! empty( $instance['query'] ) ? " query=\"{$instance['query']}\"" : ''; ?>></wls-search>
+        <wls-search<?= ! empty( $instance['query'] ) ? " query=\"{$instance['query']}\"" : '' ?><?= ! empty( $instance['fields'] ) ? " fields=\"{$instance['fields']}\"" : '' ?>></wls-search>
 		<?php
 	}
 }
