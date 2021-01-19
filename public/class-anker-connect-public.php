@@ -161,7 +161,7 @@ class Anker_Connect_Public {
 		if ( $conf === null && json_last_error() !== JSON_ERROR_NONE ) {
 			$config = $defaults;
 		} else {
-			$config = array_merge_recursive( $defaults, $conf );
+			$config = array_merge( $defaults, $conf );
 		}
 
 		echo '<script type="text/javascript">window.connect = ' . json_encode( $config ) . '</script>';
