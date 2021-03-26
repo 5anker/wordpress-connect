@@ -210,6 +210,7 @@ final class Anker_Connect_Elementor_Extension {
 			'wls_boats_slider'       => '\Anker_Connect_Elementor_Wls_BoatsSlider_Widget',
 			'wls_search'             => '\Anker_Connect_Elementor_Wls_Search_Widget',
 			'wls_search_day'         => '\Anker_Connect_Elementor_Wls_SearchDay_Widget',
+			'wls_search_watercamper' => '\Anker_Connect_Elementor_Wls_SearchWaterCamper_Widget',
 			'wls_cruise_slider'      => '\Anker_Connect_Elementor_Wls_CruiseSlider_Widget',
 			'wls_search_form'        => '\Anker_Connect_Elementor_Wls_SearchForm_Widget',
 			'wls_newsletter'         => '\Anker_Connect_Elementor_Wls_Newsletter_Widget',

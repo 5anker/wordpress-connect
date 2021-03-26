@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 5 Anker Connect Importer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-22 10:06+0000\n"
+"POT-Creation-Date: 2021-03-26 16:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -17,350 +17,231 @@ msgstr ""
 
 #. page_title
 #. Name of the plugin
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:140
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:141
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:152
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:140
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:141
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:154
 msgid "5 Anker Connect"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:168
-msgid "Reset Import Status"
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/index.php:137
+msgid "5 Anker Connect Elementor Extension"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:169
-msgid "Truncate All 5 Anker Data"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:170
-msgid "Import all immediately"
+#. Author of the plugin
+msgid "5 Anker GmbH"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:192
-msgid "General"
-msgstr ""
-
-#. id
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:199
-msgid "Module"
-msgstr ""
-
-#. id
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:207
-msgid "Public Token"
-msgstr ""
-
-#. id
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:215
-msgid "Private Token"
-msgstr ""
-
-#. id
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:223
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:227
 msgid "Activate import"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:231
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:238
-msgid "Additional configuration"
-msgstr ""
-
-#. id
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:247
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:251
 msgid "Activate notepad"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:255
-msgid "Index boats and basements"
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:160
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:242
+msgid "Additional configuration"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:272
-msgid "Boats URI"
-msgstr ""
-
-#. id
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:280
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:284
 msgid "Basements URI"
 msgstr ""
 
-#. id
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/admin/class-anker-connect-admin.php:288
-msgid "Other"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/columns.php:15
-msgid "Manufacturer / Model"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/columns.php:47
-msgid "Region"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/cron.php:11
-msgid "Once every 5 minutes"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:17
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:24
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_marinas.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/marinas/marinas.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/marinas/marinas.php:18
-msgid "Marinas"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:18
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_marina.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/marina/marina.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/marina/marina.php:18
-msgid "Marina"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:19
-msgid "View Marina"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:20
-msgid "Search Marina"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:21
-msgid "No Marina found"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:22
-msgid "No Marinas found in Trash"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:23
-msgid "Parent Marina:"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:64
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:71
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boats.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boats/boats.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boats/boats.php:18
-msgid "Boats"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:65
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boat.php:13
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boat/boat.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boat/boat.php:18
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:65
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boat.php:13
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boat/boat.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boat/boat.php:18
 msgid "Boat"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:66
-msgid "View Boat"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:67
-msgid "Search Boat"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:68
-msgid "No Boat found"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:69
-msgid "No Boats found in Trash"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/includes/custom/post-types.php:70
-msgid "Parent Boat:"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search_form.php:16
-msgid "Search form"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search_form.php:34
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boat.php:28
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_map.php:34
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_cruise_slider.php:28
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boat_book_calendar.php:34
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_contact_form.php:34
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search.php:34
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boats_slider.php:34
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_newsletter.php:34
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search_day.php:34
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boats_grid.php:34
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boats.php:34
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_marina.php:34
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_marinas.php:34
-msgid "Settings"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search_form.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boat.php:55
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_cruise_slider.php:35
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boats_slider.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search_day.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boats_grid.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boats.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_marinas.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search-day/search-day.php:31
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boats/boats.php:31
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boats-slider/boats-slider.php:32
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boat/boat.php:43
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search/search.php:31
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/cruise-slider/cruise-slider.php:31
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/finder/finder.php:31
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search-form/search-form.php:31
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boats-grid/boats-grid.php:31
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/marinas/marinas.php:31
-msgid "Query"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search_form.php:51
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search.php:51
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search_day.php:51
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search-form/search-form.php:37
-msgid "Fields"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search_form.php:61
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search-form/search-form.php:43
-msgid "Redirect"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search_form.php:71
-msgid "Row class"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boat.php:35
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boat_book_calendar.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_marina.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boat/boat.php:31
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boat-book-calendar/boat-book-calendar.php:31
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/marina/marina.php:31
-msgid "ID"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boat.php:45
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boat/boat.php:37
-msgid "Sections"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_map.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/map/map.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/map/map.php:18
-msgid "Map"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_map.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/map/map.php:31
-msgid "Latitude"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_map.php:51
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/map/map.php:37
-msgid "Longitude"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_cruise_slider.php:13
-msgid "Cruise slider"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/index.php:137
-msgid "5 Anker Connect Elementor Extension"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/index.php:262
-msgid "Connect"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boat_book_calendar.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boat-book-calendar/boat-book-calendar.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boat-book-calendar/boat-book-calendar.php:18
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boat_book_calendar.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boat-book-calendar/boat-book-calendar.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boat-book-calendar/boat-book-calendar.php:18
 msgid "Boat Book Calendar"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_contact_form.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/contact-form/contact-form.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/contact-form/contact-form.php:18
-msgid "Contact Form"
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:64
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:71
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boats.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boats/boats.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boats/boats.php:18
+msgid "Boats"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_contact_form.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_newsletter.php:41
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/contact-form/contact-form.php:31
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/newsletter/newsletter.php:31
-msgid "Privacy"
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boats-grid/boats-grid.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boats-grid/boats-grid.php:18
+msgid "Boats Grid"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_notepad.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/notepad/notepad.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/notepad/notepad.php:18
-msgid "Notepad"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search/search.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search/search.php:18
-msgid "Search"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boats_slider.php:16
-msgid "Boats slider"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_newsletter.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/newsletter/newsletter.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/newsletter/newsletter.php:18
-msgid "Newsletter"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_planbar_login.php:16
-msgid "Planbar login"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_search_day.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search-day/search-day.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search-day/search-day.php:18
-msgid "Search Day"
-msgstr ""
-
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/elementor/wls_boats_grid.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boats_grid.php:16
 msgid "Boats grid"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boats-slider/boats-slider.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boats-slider/boats-slider.php:18
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boats-slider/boats-slider.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boats-slider/boats-slider.php:18
 msgid "Boats Slider"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/cruise-slider/cruise-slider.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/cruise-slider/cruise-slider.php:18
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boats_slider.php:16
+msgid "Boats slider"
+msgstr ""
+
+#. id
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:276
+msgid "Boats URI"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/index.php:263
+msgid "Connect"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_contact_form.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/contact-form/contact-form.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/contact-form/contact-form.php:18
+msgid "Contact Form"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/cruise-slider/cruise-slider.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/cruise-slider/cruise-slider.php:18
 msgid "Cruise Slider"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/finder/finder.php:15
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/finder/finder.php:17
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_cruise_slider.php:13
+msgid "Cruise slider"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_watercamper.php:51
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_form.php:51
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search.php:51
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_day.php:51
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search/search.php:37
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-form/search-form.php:37
+msgid "Fields"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/finder/finder.php:15
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/finder/finder.php:17
 msgid "Finder"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search-form/search-form.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search-form/search-form.php:18
-msgid "Search Form"
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:159
+msgid "General"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/search-form/search-form.php:49
-msgid "Row Class"
+#. Author URI of the plugin
+msgid "https://www.5-anker.com"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/planbar-login/planbar-login.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/planbar-login/planbar-login.php:18
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boat.php:35
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boat_book_calendar.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_marina.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boat/boat.php:31
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boat-book-calendar/boat-book-calendar.php:31
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/marina/marina.php:31
+msgid "ID"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:174
+msgid "Import all immediately"
+msgstr ""
+
+#. id
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:259
+msgid "Index boats and basements"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_map.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/map/map.php:31
+msgid "Latitude"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_map.php:51
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/map/map.php:37
+msgid "Longitude"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/columns.php:15
+msgid "Manufacturer / Model"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_map.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/map/map.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/map/map.php:18
+msgid "Map"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:18
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_marina.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/marina/marina.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/marina/marina.php:18
+msgid "Marina"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:17
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:24
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_marinas.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/marinas/marinas.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/marinas/marinas.php:18
+msgid "Marinas"
+msgstr ""
+
+#. id
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:203
+msgid "Module"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_newsletter.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/newsletter/newsletter.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/newsletter/newsletter.php:18
+msgid "Newsletter"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:68
+msgid "No Boat found"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:69
+msgid "No Boats found in Trash"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:21
+msgid "No Marina found"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:22
+msgid "No Marinas found in Trash"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_notepad.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/notepad/notepad.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/notepad/notepad.php:18
+msgid "Notepad"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/cron.php:11
+msgid "Once every 5 minutes"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:70
+msgid "Parent Boat:"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:23
+msgid "Parent Marina:"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/planbar-login/planbar-login.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/planbar-login/planbar-login.php:18
 msgid "Planbar Login"
 msgstr ""
 
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boats-grid/boats-grid.php:16
-#: ../../../../wordpress-plugins/5-anker-connect/trunk/lib/siteorigin/boats-grid/boats-grid.php:18
-msgid "Boats Grid"
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_planbar_login.php:16
+msgid "Planbar login"
 msgstr ""
 
 #. Description of the plugin
@@ -369,10 +250,142 @@ msgid ""
 "WordPress Website."
 msgstr ""
 
-#. Author of the plugin
-msgid "5 Anker GmbH"
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_contact_form.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_newsletter.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/contact-form/contact-form.php:31
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/newsletter/newsletter.php:31
+msgid "Privacy"
 msgstr ""
 
-#. Author URI of the plugin
-msgid "https://www.5-anker.com"
+#. id
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:219
+msgid "Private Token"
+msgstr ""
+
+#. id
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:211
+msgid "Public Token"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_watercamper.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_form.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boat.php:55
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_cruise_slider.php:35
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boats_slider.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_day.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boats_grid.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boats.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_marinas.php:41
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-day/search-day.php:31
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boats/boats.php:31
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boats-slider/boats-slider.php:32
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boat/boat.php:43
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search/search.php:31
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/cruise-slider/cruise-slider.php:31
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/finder/finder.php:31
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-form/search-form.php:31
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boats-grid/boats-grid.php:31
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-watercamper/search-watercamper.php:31
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/marinas/marinas.php:31
+msgid "Query"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_form.php:61
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-form/search-form.php:43
+msgid "Redirect"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/columns.php:47
+msgid "Region"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:172
+msgid "Reset Import Status"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-form/search-form.php:49
+msgid "Row Class"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_form.php:71
+msgid "Row class"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search/search.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search/search.php:18
+msgid "Search"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:67
+msgid "Search Boat"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_day.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-day/search-day.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-day/search-day.php:18
+msgid "Search Day"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-form/search-form.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-form/search-form.php:18
+msgid "Search Form"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_form.php:16
+msgid "Search form"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:20
+msgid "Search Marina"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_watercamper.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-watercamper/search-watercamper.php:16
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/search-watercamper/search-watercamper.php:18
+msgid "Search WaterCamper"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boat.php:45
+#: ../../../../wordpress-plugins/wordpress-connect/lib/siteorigin/boat/boat.php:37
+msgid "Sections"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_watercamper.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_form.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boat.php:28
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_map.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_cruise_slider.php:28
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boat_book_calendar.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_contact_form.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boats_slider.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_newsletter.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_day.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boats_grid.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_boats.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_marina.php:34
+#: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_marinas.php:34
+msgid "Settings"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:162
+msgid "Tools"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:173
+msgid "Truncate All 5 Anker Data"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:161
+msgid "URL"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:66
+msgid "View Boat"
+msgstr ""
+
+#: ../../../../wordpress-plugins/wordpress-connect/includes/custom/post-types.php:19
+msgid "View Marina"
 msgstr ""

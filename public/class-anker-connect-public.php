@@ -108,6 +108,7 @@ class Anker_Connect_Public {
 			'wls_boats_slider'       => 'BoatsSlider',
 			'wls_search'             => 'Search',
 			'wls_search_day'         => 'SearchDay',
+			'wls_search_watercamper' => 'SearchWaterCamper',
 			'wls_cruise_slider'      => 'CruiseSlider',
 			'wls_search_form'        => 'SearchForm',
 			'wls_newsletter'         => 'Newsletter',
