@@ -5,7 +5,7 @@ Tags: 5anker, importer, charter
 Requires at least: 5.0.0
 Requires PHP: 7.2
 Tested up to: 5.7
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,10 @@ Please visit https://www.5-anker.com or feel free to contact us
 
 == Changelog ==
 
+= 1.2.1 =
+Shortcode attributes fix
+= 1.2.0 =
+WaterCamper widgets
 = 1.1.6 =
 Merging fix
 = 1.1.5 =

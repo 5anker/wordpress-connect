@@ -126,6 +126,7 @@ class Anker_Connect_Public {
 			$nn = str_replace( '_', '-', $plugin );
 
 			add_shortcode( $nn, function ( $atts ) use ( $nn ) {
+				$atts = (array) $atts;
 				//Use & for modify current item in array
 				array_walk( $atts, function ( &$item, $key ) {
 					$item = $key . '="' . $item . '"';
