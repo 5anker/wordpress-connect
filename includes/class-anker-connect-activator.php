@@ -32,6 +32,7 @@ class Anker_Connect_Activator {
 	public static function activate() {
 		$defaults = [
 			'module'        => 'charter',
+			'endpoint'      => 'https://connect.5-anker.com/dnet/com/',
 			'private_token' => '',
 			'public_token'  => '',
 			'config'        => '{"redirects":{"form":"/boot-mieten/","boat":"/yacht/{slug}/","booking":"/yacht/{slug}/?date_from={date_from}&date_to={date_to}&duration={duration}","marina":"/marina/{slug}/"}}',

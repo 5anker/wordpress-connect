@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 5 Anker Connect Importer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-26 16:01+0000\n"
+"POT-Creation-Date: 2022-01-24 15:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -19,7 +19,7 @@ msgstr ""
 #. Name of the plugin
 #: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:140
 #: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:141
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:154
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:155
 msgid "5 Anker Connect"
 msgstr ""
 
@@ -32,23 +32,23 @@ msgid "5 Anker GmbH"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:227
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:236
 msgid "Activate import"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:251
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:260
 msgid "Activate notepad"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:160
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:242
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:161
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:251
 msgid "Additional configuration"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:284
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:293
 msgid "Basements URI"
 msgstr ""
 
@@ -92,7 +92,7 @@ msgid "Boats slider"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:276
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:285
 msgid "Boats URI"
 msgstr ""
 
@@ -115,6 +115,11 @@ msgstr ""
 msgid "Cruise slider"
 msgstr ""
 
+#. id
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:212
+msgid "Endpoint"
+msgstr ""
+
 #: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_watercamper.php:51
 #: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search_form.php:51
 #: ../../../../wordpress-plugins/wordpress-connect/lib/elementor/wls_search.php:51
@@ -129,7 +134,7 @@ msgstr ""
 msgid "Finder"
 msgstr ""
 
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:159
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:160
 msgid "General"
 msgstr ""
 
@@ -146,12 +151,12 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:174
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:175
 msgid "Import all immediately"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:259
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:268
 msgid "Index boats and basements"
 msgstr ""
 
@@ -191,7 +196,7 @@ msgid "Marinas"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:203
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:204
 msgid "Module"
 msgstr ""
 
@@ -258,12 +263,12 @@ msgid "Privacy"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:219
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:228
 msgid "Private Token"
 msgstr ""
 
 #. id
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:211
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:220
 msgid "Public Token"
 msgstr ""
 
@@ -300,7 +305,7 @@ msgstr ""
 msgid "Region"
 msgstr ""
 
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:172
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:173
 msgid "Reset Import Status"
 msgstr ""
 
@@ -370,15 +375,15 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:162
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:163
 msgid "Tools"
 msgstr ""
 
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:173
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:174
 msgid "Truncate All 5 Anker Data"
 msgstr ""
 
-#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:161
+#: ../../../../wordpress-plugins/wordpress-connect/admin/class-anker-connect-admin.php:162
 msgid "URL"
 msgstr ""
 

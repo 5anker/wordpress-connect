@@ -23,17 +23,19 @@ class AnkerRest {
 				$body = $obj;
 		}
 
-		$args = array(
+		$args = [
 			'method'  => $method,
 			'body'    => $body,
-			'headers' => array(
+			'headers' => [
 				'Authorization' => 'Bearer ' . $settings->private_token,
 				'Accept'        => 'application/json',
 				'Content-Type'  => 'application/json',
-			)
-		);
+			],
+		];
 
-		$response = wp_remote_request( 'https://connect.5-anker.com/' . $url, $args );
+		$host = parse_url( $settings->endpoint ?: 'https://connect.5-anker.com/dnet/com/', PHP_URL_HOST );
+
+		$response = wp_remote_request( 'https://' . $host . '/' . $url, $args );
 		$body     = wp_remote_retrieve_body( $response );
 
 		return json_decode( $body );

@@ -5,7 +5,7 @@ Tags: 5anker, importer, charter
 Requires at least: 5.0.0
 Requires PHP: 7.2
 Tested up to: 5.9
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,11 +13,11 @@ Plugin to integrate the White Label Solution of 5 Anker Connect into your WordPr
 
 == Description ==
 
-This plugin integrates the 5 Anker Connect White Label modules into your website and imports boats and bases. Furthermore its interacting with site editors like Elementor, Gutenberg and the SiteOrigin Editor.
+This plugin integrates the 5 Anker Connect White Label modules into your website and imports boats and bases. Furthermore, it's interacting with site editors like Elementor, Gutenberg and the SiteOrigin Editor.
 
 Features:
 
-- Embedding WLS Scripts and auto configure connection settings
+- Embedding WLS Scripts and configure automatically connection settings
 - Imports boats and basements on demand
 - Elementor widgets
 - SiteOrigin widgets
@@ -45,6 +45,8 @@ Please visit https://www.5-anker.com or feel free to contact us
 
 == Changelog ==
 
+= 1.2.4 =
+Option for setting endpoint
 = 1.2.3 =
 Wordpress 5.9 compatibility
 = 1.2.2 =

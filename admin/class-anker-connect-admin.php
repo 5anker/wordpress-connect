@@ -146,9 +146,10 @@ class Anker_Connect_Admin {
 	}
 
 	public function anker_connect_create_admin_page() {
+        $options = get_option( 'connect_options' );
+        $is_import = $options['import'] ?? false;
 		$default_tab = 'connection';
-		$tab         = $_GET['tab'] ?? $default_tab;
-		?>
+		$tab         = $_GET['tab'] ?? $default_tab; ?>
 
         <div class="wrap" id="anker-connect-plugin-options">
             <h2><?= __( '5 Anker Connect', '5-anker-connect' ) ?></h2>
@@ -158,7 +159,7 @@ class Anker_Connect_Admin {
             <nav class="nav-tab-wrapper">
                 <a href="?page=5-anker-connect" class="nav-tab <?= ( $tab === 'connection' ) ? 'nav-tab-active' : '' ?>"><?= __( 'General', '5-anker-connect' ) ?></a>
                 <a href="?page=5-anker-connect&tab=additional" class="nav-tab <?= ( $tab === 'additional' ) ? 'nav-tab-active' : '' ?>"><?= __( 'Additional configuration', '5-anker-connect' ) ?></a>
-                <a href="?page=5-anker-connect&tab=url" class="nav-tab <?= ( $tab === 'url' ) ? 'nav-tab-active' : '' ?>"><?= __( 'URL', '5-anker-connect' ) ?></a>
+                <?php if($is_import): ?><a href="?page=5-anker-connect&tab=url" class="nav-tab <?= ( $tab === 'url' ) ? 'nav-tab-active' : '' ?>"><?= __( 'URL', '5-anker-connect' ) ?></a><?php endif; ?>
                 <a href="?page=5-anker-connect&tab=tools" class="nav-tab <?= ( $tab === 'tools' ) ? 'nav-tab-active' : '' ?>"><?= __( 'Tools', '5-anker-connect' ) ?></a>
             </nav>
 
@@ -177,12 +178,12 @@ class Anker_Connect_Admin {
 						settings_fields( 'anker_connect_option_group' );
 						do_settings_sections( 'anker-connect-admin-' . $tab );
 						submit_button();
-					}
-					?>
+					} ?>
                 </form>
             </div>
         </div>
-	<?php }
+		<?php
+	}
 
 	public function anker_connect_page_init() {
 		register_setting(
@@ -202,6 +203,14 @@ class Anker_Connect_Admin {
 			'module', // id
 			__( 'Module', '5-anker-connect' ), // title
 			[ $this, 'module_callback' ], // callback
+			'anker-connect-admin-connection', // page
+			'anker_connect_setting_section_connection', // section
+		);
+
+		add_settings_field(
+			'endpoint', // id
+			__( 'Endpoint', '5-anker-connect' ), // title
+			[ $this, 'endpoint_callback' ], // callback
 			'anker-connect-admin-connection', // page
 			'anker_connect_setting_section_connection', // section
 		);
@@ -303,6 +312,13 @@ class Anker_Connect_Admin {
 			$sanitary_values['module'] = $this->anker_connect_options['module'] ?? 'charter';
 		}
 
+		if ( isset( $input['endpoint'] ) ) {
+			$sanitary_values['endpoint'] = sanitize_text_field( $input['endpoint'] ) ?: 'https://connect.5-anker.com/dnet/com/';
+		} else {
+			$sanitary_values['endpoint'] = $this->anker_connect_options['endpoint'] ?? 'https://connect.5-anker.com/dnet/com/';
+		}
+
+
 		if ( isset( $input['public_token'] ) ) {
 			$sanitary_values['public_token'] = sanitize_text_field( $input['public_token'] );
 		} else {
@@ -318,7 +334,7 @@ class Anker_Connect_Admin {
 		if ( isset( $input['import'] ) ) {
 			$sanitary_values['import'] = (bool) $input['import'];
 		} else {
-			$sanitary_values['import'] = $this->anker_connect_options['import'] ?? false;
+			$sanitary_values['import'] = false;
 		}
 
 		if ( isset( $input['index'] ) ) {
@@ -374,14 +390,20 @@ class Anker_Connect_Admin {
 	}
 
 	public function module_callback() {
-		$current = isset( $this->anker_connect_options['module'] ) ? esc_attr( $this->anker_connect_options['module'] ) : '';
-		?>
+		$current = isset( $this->anker_connect_options['module'] ) ? esc_attr( $this->anker_connect_options['module'] ) : ''; ?>
         <select class="regular-text" type="text" name="connect_options[module]" id="module">
             <option value="charter" <?= $current === 'charter' ? 'selected' : '' ?>>Charterunternehmen</option>
             <option value="agency" <?= $current === 'agency' ? 'selected' : '' ?>>Agentur / Reisebüro</option>
             <option value="partner" <?= $current === 'partner' ? 'selected' : '' ?>>Bootsreisen24 Partner</option>
         </select>
 		<?php
+	}
+
+	public function endpoint_callback() {
+		printf(
+			'<input class="regular-text" type="text" name="connect_options[endpoint]" id="endpoint" value="%s">',
+			isset( $this->anker_connect_options['endpoint'] ) ? esc_attr( $this->anker_connect_options['endpoint'] ) : ''
+		);
 	}
 
 	public function public_token_callback() {
@@ -439,6 +461,4 @@ class Anker_Connect_Admin {
 			isset( $this->anker_connect_options['basements_uri'] ) ? esc_attr( $this->anker_connect_options['basements_uri'] ) : ''
 		);
 	}
-
-
 }

@@ -1,3 +1,4 @@
 .idea
 .phpintel
-languages/anker-connect-backup*
+.DS_Store
+languages/*backup*

@@ -143,6 +143,7 @@ class Anker_Connect_Public {
 	public function enqueue_head_config() {
 		$settings = Anker_Connect::getOptions();
 		$defaults = [
+			'api'       => $settings->endpoint ?: 'https://connect.5-anker.com/dnet/com/',
 			'token'     => $settings->public_token,
 			'redirects' => [],
 			'settings'  => [],
