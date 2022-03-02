@@ -55,6 +55,8 @@ function wls_notepad_block_init() {
 		'editor_style'  => 'wls-notepad-block-editor',
 		// 'style'         => 'wls-notepad-block',
 	] );
+
+	wp_set_script_translations( 'wls-notepad-block-editor', '5-anker-connect' );
 }
 
 add_action( 'init', 'wls_notepad_block_init' );

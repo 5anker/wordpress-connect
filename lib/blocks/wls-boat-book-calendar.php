@@ -55,6 +55,8 @@ function wls_boat_book_calendar_block_init() {
 		'editor_style'  => 'wls-boat-book-calendar-block-editor',
 		// 'style'         => 'wls-boat-book-calendar-block',
 	] );
+
+	wp_set_script_translations( 'wls-boat-book-calendar-editor', '5-anker-connect' );
 }
 
 add_action( 'init', 'wls_boat_book_calendar_block_init' );

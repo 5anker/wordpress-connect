@@ -55,6 +55,8 @@ function wls_contact_form_block_init() {
 		'editor_style'  => 'wls-contact-form-block-editor',
 		// 'style'         => 'wls-contact-form-block',
 	] );
+
+	wp_set_script_translations( 'wls-contact-form-block-editor', '5-anker-connect' );
 }
 
 add_action( 'init', 'wls_contact_form_block_init' );

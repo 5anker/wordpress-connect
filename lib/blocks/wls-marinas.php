@@ -55,6 +55,8 @@ function wls_marinas_block_init() {
 		'editor_style'  => 'wls-marinas-block-editor',
 		'style'         => 'wls-marinas-block',
 	] );
+
+	wp_set_script_translations( 'wls-marinas-block-editor', '5-anker-connect' );
 }
 
 add_action( 'init', 'wls_marinas_block_init' );

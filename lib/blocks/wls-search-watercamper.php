@@ -56,6 +56,8 @@ function wls_search_watercamper_block_init() {
 		'editor_style'  => 'wls-search-watercamper-block-editor',
 		// 'style'         => 'wls-search-watercamper-block',
 	] );
+
+	wp_set_script_translations( 'wls-search-watercamper-block-editor', '5-anker-connect' );
 }
 
 add_action( 'init', 'wls_search_watercamper_block_init' );

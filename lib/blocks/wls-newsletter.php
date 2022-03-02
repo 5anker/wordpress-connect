@@ -55,6 +55,8 @@ function wls_newsletter_block_init() {
 		'editor_style'  => 'wls-newsletter-block-editor',
 		'style'         => 'wls-newsletter-block',
 	] );
+
+	wp_set_script_translations( 'wls-marinas-block-editor', '5-anker-connect' );
 }
 
 add_action( 'init', 'wls_newsletter_block_init' );

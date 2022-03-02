@@ -56,6 +56,8 @@ function wls_search_block_init() {
 		'editor_style'  => 'wls-search-block-editor',
 		// 'style'         => 'wls-search-block',
 	] );
+
+	wp_set_script_translations( 'wls-search-block-editor', '5-anker-connect' );
 }
 
 add_action( 'init', 'wls_search_block_init' );

@@ -55,6 +55,8 @@ function wls_map_block_init() {
 		'editor_style'  => 'wls-map-block-editor',
 		'style'         => 'wls-map-block',
 	] );
+
+	wp_set_script_translations( 'wls-map-block-editor', '5-anker-connect' );
 }
 
 add_action( 'init', 'wls_map_block_init' );

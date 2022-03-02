@@ -55,6 +55,8 @@ function wls_boats_grid_block_init() {
 		'editor_style'  => 'wls-boats-grid-block-editor',
 		// 'style'         => 'wls-boats-grid-block',
 	] );
+
+	wp_set_script_translations( 'wls-boats-grid-block-editor', '5-anker-connect' );
 }
 
 add_action( 'init', 'wls_boats_grid_block_init' );

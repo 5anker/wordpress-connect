@@ -55,6 +55,8 @@ function wls_cruise_slider_block_init() {
 		'editor_style'  => 'wls-cruise-slider-block-editor',
 		// 'style'         => 'wls-cruise-slider-block',
 	] );
+
+	wp_set_script_translations( 'wls-cruise-slider-block-editor', '5-anker-connect' );
 }
 
 add_action( 'init', 'wls_cruise_slider_block_init' );

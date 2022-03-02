@@ -5,7 +5,7 @@ Tags: 5anker, importer, charter
 Requires at least: 5.0.0
 Requires PHP: 7.2
 Tested up to: 5.9
-Stable tag: 1.2.4
+Stable tag: 1.2.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,8 @@ Please visit https://www.5-anker.com or feel free to contact us
 
 == Changelog ==
 
+= 1.2.5 =
+Gutenberg Block Translations
 = 1.2.4 =
 Option for setting endpoint
 = 1.2.3 =
