@@ -26,6 +26,7 @@ class AnkerRest {
 		$args = [
 			'method'  => $method,
 			'body'    => $body,
+			'timeout' => 120,
 			'headers' => [
 				'Authorization' => 'Bearer ' . $settings->private_token,
 				'Accept'        => 'application/json',

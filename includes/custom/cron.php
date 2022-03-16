@@ -83,7 +83,7 @@ function anker_connect_schedule_hook_boats( int $limit = 50 ) {
 			'com5anker_boat_id' => $boat->id,
 			'com5anker_mm'      => $boat->model->manufacturer->name . ' ' . $boat->model->name,
 			'com5anker_data'    => $boat,
-		], (array) $boat->metas );
+		], (array) ($boat->metas ?? []) );
 
 		if ( ! isset( $settings->index ) || empty( $settings->index ) ) {
 			$metas = array_merge( $metas, [

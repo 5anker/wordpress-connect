@@ -127,6 +127,7 @@ class Anker_Connect_Admin {
 	}
 
 	public function import_all_immediately() {
+		$this->reset_import_status();
 		anker_connect_schedule_hook_boats( 10000 );
 		anker_connect_schedule_hook_basements( 10000 );
 	}
