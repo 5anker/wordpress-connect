@@ -150,7 +150,7 @@ class Anker_Connect_Admin {
         $options = get_option( 'connect_options' );
         $is_import = $options['import'] ?? false;
 		$default_tab = 'connection';
-		$tab         = $_GET['tab'] ?? $default_tab; ?>
+		$tab         = sanitize_text_field($_GET['tab'] ?? $default_tab); ?>
 
         <div class="wrap" id="anker-connect-plugin-options">
             <h2><?= __( '5 Anker Connect', '5-anker-connect' ) ?></h2>
