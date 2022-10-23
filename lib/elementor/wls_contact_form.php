@@ -51,7 +51,7 @@ class Anker_Connect_Elementor_Wls_ContactForm_Widget extends \Elementor\Widget_B
 	protected function render($instance = [])
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-contact-form privacy="<?= $settings['privacy'] ?? ''; ?>"></wls-contact-form>
+		<wls-contact-form privacy="<?php echo $settings['privacy'] ?? ''; ?>"></wls-contact-form>
 		<?php
 	}
 }

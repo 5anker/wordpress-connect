@@ -36,7 +36,7 @@ class Anker_Connect_Wls_ContactForm_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-contact-form privacy="<?= $instance['privacy']; ?>"></wls-contact-form>
+        <wls-contact-form privacy="<?php echo $instance['privacy']; ?>"></wls-contact-form>
 		<?php
 	}
 }

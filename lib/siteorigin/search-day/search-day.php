@@ -36,7 +36,7 @@ class Anker_Connect_Wls_SearchDay_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-search-day<?= ! empty( $instance['query'] ) ? " query=\"{$instance['query']}\"" : ''; ?>></wls-search-day>
+        <wls-search-day<?php echo ! empty( $instance['query'] ) ? " query=\"{$instance['query']}\"" : ''; ?>></wls-search-day>
 		<?php
 	}
 }

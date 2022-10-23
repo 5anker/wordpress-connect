@@ -153,18 +153,18 @@ class Anker_Connect_Admin {
 		$tab         = sanitize_text_field($_GET['tab'] ?? $default_tab); ?>
 
         <div class="wrap" id="anker-connect-plugin-options">
-            <h2><?= __( '5 Anker Connect', '5-anker-connect' ) ?></h2>
+            <h2><?php echo __( '5 Anker Connect', '5-anker-connect' ) ?></h2>
             <p></p>
 			<?php settings_errors(); ?>
 
             <nav class="nav-tab-wrapper">
-                <a href="?page=5-anker-connect" class="nav-tab <?= ( $tab === 'connection' ) ? 'nav-tab-active' : '' ?>"><?= __( 'General', '5-anker-connect' ) ?></a>
-                <a href="?page=5-anker-connect&tab=additional" class="nav-tab <?= ( $tab === 'additional' ) ? 'nav-tab-active' : '' ?>"><?= __( 'Additional configuration', '5-anker-connect' ) ?></a>
-                <?php if($is_import): ?><a href="?page=5-anker-connect&tab=url" class="nav-tab <?= ( $tab === 'url' ) ? 'nav-tab-active' : '' ?>"><?= __( 'URL', '5-anker-connect' ) ?></a><?php endif; ?>
-                <a href="?page=5-anker-connect&tab=tools" class="nav-tab <?= ( $tab === 'tools' ) ? 'nav-tab-active' : '' ?>"><?= __( 'Tools', '5-anker-connect' ) ?></a>
+                <a href="?page=5-anker-connect" class="nav-tab <?php echo ( $tab === 'connection' ) ? 'nav-tab-active' : '' ?>"><?php echo __( 'General', '5-anker-connect' ) ?></a>
+                <a href="?page=5-anker-connect&tab=additional" class="nav-tab <?php echo ( $tab === 'additional' ) ? 'nav-tab-active' : '' ?>"><?php echo __( 'Additional configuration', '5-anker-connect' ) ?></a>
+                <?php if($is_import): ?><a href="?page=5-anker-connect&tab=url" class="nav-tab <?php echo ( $tab === 'url' ) ? 'nav-tab-active' : '' ?>"><?php echo __( 'URL', '5-anker-connect' ) ?></a><?php endif; ?>
+                <a href="?page=5-anker-connect&tab=tools" class="nav-tab <?php echo ( $tab === 'tools' ) ? 'nav-tab-active' : '' ?>"><?php echo __( 'Tools', '5-anker-connect' ) ?></a>
             </nav>
 
-            <div class="tab-content current-tab-<?= $tab ?>">
+            <div class="tab-content current-tab-<?php echo $tab ?>">
                 <form method="post" action="options.php">
 					<?php
 					if ( $tab === 'tools' ) {
@@ -393,9 +393,9 @@ class Anker_Connect_Admin {
 	public function module_callback() {
 		$current = isset( $this->anker_connect_options['module'] ) ? esc_attr( $this->anker_connect_options['module'] ) : ''; ?>
         <select class="regular-text" type="text" name="connect_options[module]" id="module">
-            <option value="charter" <?= $current === 'charter' ? 'selected' : '' ?>>Charterunternehmen</option>
-            <option value="agency" <?= $current === 'agency' ? 'selected' : '' ?>>Agentur / Reisebüro</option>
-            <option value="partner" <?= $current === 'partner' ? 'selected' : '' ?>>Bootsreisen24 Partner</option>
+            <option value="charter" <?php echo $current === 'charter' ? 'selected' : '' ?>>Charterunternehmen</option>
+            <option value="agency" <?php echo $current === 'agency' ? 'selected' : '' ?>>Agentur / Reisebüro</option>
+            <option value="partner" <?php echo $current === 'partner' ? 'selected' : '' ?>>Bootsreisen24 Partner</option>
         </select>
 		<?php
 	}

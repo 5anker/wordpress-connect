@@ -42,7 +42,7 @@ class Anker_Connect_Wls_Search_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-search<?= ! empty( $instance['query'] ) ? " query=\"{$instance['query']}\"" : '' ?><?= ! empty( $instance['fields'] ) ? " fields=\"{$instance['fields']}\"" : '' ?>></wls-search>
+        <wls-search<?php echo ! empty( $instance['query'] ) ? " query=\"{$instance['query']}\"" : '' ?><?php echo ! empty( $instance['fields'] ) ? " fields=\"{$instance['fields']}\"" : '' ?>></wls-search>
 		<?php
 	}
 }

@@ -49,7 +49,7 @@ class Anker_Connect_Wls_Boat_Widget extends SiteOrigin_Widget {
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
         <wls-boat
-                id="<?= $instance['id']; ?>"<?= ! empty( $instance['query'] ) ? " query=\"{$instance['query']}\"" : ''; ?><?= ! empty( $instance['sections'] ) ? " sections=\"{$instance['sections']}\"" : ''; ?>></wls-boat>
+                id="<?php echo $instance['id']; ?>"<?php echo ! empty( $instance['query'] ) ? " query=\"{$instance['query']}\"" : ''; ?><?php echo ! empty( $instance['sections'] ) ? " sections=\"{$instance['sections']}\"" : ''; ?>></wls-boat>
 		<?php
 	}
 }

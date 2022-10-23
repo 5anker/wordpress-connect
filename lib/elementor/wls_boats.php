@@ -50,7 +50,7 @@ class Anker_Connect_Elementor_Wls_Boats_Widget extends \Elementor\Widget_Base
 	protected function render($instance = [])
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-boats query="<?= $settings['query'] ?? ''; ?>"></wls-boats>
+		<wls-boats query="<?php echo $settings['query'] ?? ''; ?>"></wls-boats>
 		<?php
 	}
 }

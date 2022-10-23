@@ -38,12 +38,12 @@ class Anker_Connect_Wls_Finder extends SiteOrigin_Widget {
 		?>
         <form style="display: flex; max-width: 500px; margin: 50px auto; align-items: center" role="search" method="GET"
               action="">
-            <input class="form-control" value="<?= sanitize_text_field( $_GET['term'] ); ?>"
+            <input class="form-control" value="<?php echo esc_attr( $_GET['term'] ); ?>"
                    placeholder="Suche (z.B. führerscheinfrei, Hund, Müritz)" name="term" type="text"
                    style="height: auto; padding: 10px 10px; margin-right: 1rem;">
             <button class="btn btn-success" type="submit"><i class="fa fa-search"></i></button>
         </form>
-        <wls-boats-grid query="<?= $instance['query'] ?? ''; ?>"></wls-boats-grid>
+        <wls-boats-grid query="<?php echo esc_attr($instance['query'] ?? ''); ?>"></wls-boats-grid>
 		<?php
 	}
 }

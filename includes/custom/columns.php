@@ -23,11 +23,11 @@ add_filter( 'manage_boat_posts_columns', 'anker_connect_set_custom_edit_boat_col
 function anker_connect_custom_boat_column( $column, $post_id ) {
 	switch ( $column ) {
 		case 'anker_mm':
-			echo get_post_meta( $post_id, 'com5anker_mm', true );
+			echo esc_html(get_post_meta( $post_id, 'com5anker_mm', true ));
 			break;
 
 		case 'anker_id':
-			echo get_post_meta( $post_id, 'com5anker_id', true );
+			echo esc_html(get_post_meta( $post_id, 'com5anker_id', true ));
 			break;
 	}
 }
@@ -56,11 +56,11 @@ add_filter( 'manage_basement_posts_columns', 'anker_connect_custom_edit_basement
 function anker_connect_custom_basement_column( $column, $post_id ) {
 	switch ( $column ) {
 		case 'anker_region':
-			echo get_post_meta( $post_id, 'com5anker_region', true );
+			echo esc_html(get_post_meta( $post_id, 'com5anker_region', true ));
 			break;
 
 		case 'anker_id':
-			echo get_post_meta( $post_id, 'com5anker_id', true );
+			echo esc_html(get_post_meta( $post_id, 'com5anker_id', true ));
 			break;
 	}
 }

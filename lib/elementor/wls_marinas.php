@@ -51,7 +51,7 @@ class Anker_Connect_Elementor_Wls_Marinas_Widget extends \Elementor\Widget_Base
 	protected function render()
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-marinas query="<?= $settings['query'] ?? ''; ?>"></wls-marinas>
+		<wls-marinas query="<?php echo $settings['query'] ?? ''; ?>"></wls-marinas>
 		<?php
 	}
 }

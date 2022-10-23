@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       5 Anker Connect
  * Description:       Plugin to integrate the White Label Solution of 5 Anker Connect into your WordPress Website.
- * Version:           1.2.6
+ * Version:           1.2.8
  * Author:            5 Anker GmbH
  * Author URI:        https://www.5-anker.com
  * License:           GPL-2.0+
@@ -34,7 +34,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'ANKER_CONNECT_VERSION', '1.2.7' );
+define( 'ANKER_CONNECT_VERSION', '1.2.8' );
 
 /**
  * The code that runs during plugin activation.

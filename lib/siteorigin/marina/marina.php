@@ -36,7 +36,7 @@ class Anker_Connect_Wls_Marina_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-marina id="<?= $instance['id']; ?>"></wls-marina>
+        <wls-marina id="<?php echo $instance['id']; ?>"></wls-marina>
 		<?php
 	}
 }

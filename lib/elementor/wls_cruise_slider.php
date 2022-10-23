@@ -44,7 +44,7 @@ class Anker_Connect_Elementor_Wls_CruiseSlider_Widget extends \Elementor\Widget_
 
 	protected function render( $instance = [] ) {
 		$settings = $this->get_settings_for_display(); ?>
-        <wls-cruise-slider query="<?= $settings['query'] ?? ''; ?>"></wls-cruise-slider>
+        <wls-cruise-slider query="<?php echo $settings['query'] ?? ''; ?>"></wls-cruise-slider>
 		<?php
 	}
 }

@@ -5,7 +5,7 @@ Tags: 5anker, importer, charter
 Requires at least: 5.0.0
 Requires PHP: 7.4
 Tested up to: 6.0
-Stable tag: 1.2.7
+Stable tag: 1.2.8
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,8 @@ Please visit https://www.5-anker.com or feel free to contact us
 
 == Changelog ==
 
+= 1.2.8 =
+Fixed XSS vulnerability
 = 1.2.7 =
 Fixed XSS vulnerability
 = 1.2.6 =

@@ -61,7 +61,7 @@ class Anker_Connect_Elementor_Wls_SearchDay_Widget extends \Elementor\Widget_Bas
 	protected function render($instance = [])
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-search-day<?= !empty($settings['query']) ? " query=\"{$settings['query']}\"" : ''; ?><?= !empty($settings['fields']) ? " fields=\"{$settings['fields']}\"" : ''; ?>></wls-search-day>
+		<wls-search-day<?php echo !empty($settings['query']) ? " query=\"{$settings['query']}\"" : ''; ?><?php echo !empty($settings['fields']) ? " fields=\"{$settings['fields']}\"" : ''; ?>></wls-search-day>
 		<?php
 	}
 }

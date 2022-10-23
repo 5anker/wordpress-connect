@@ -36,7 +36,7 @@ class Anker_Connect_Wls_CruiseSlider_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-cruise-slider query="<?= $instance['query']; ?>"></wls-cruise-slider>
+        <wls-cruise-slider query="<?php echo $instance['query']; ?>"></wls-cruise-slider>
 		<?php
 	}
 }

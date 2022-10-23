@@ -38,7 +38,7 @@ class Anker_Connect_Wls_BoatsSlider_Widget extends SiteOrigin_Widget {
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
 
-        <wls-boats-slider query="<?= $instance['query'] ?? ''; ?>"></wls-boats-slider>
+        <wls-boats-slider query="<?php echo $instance['query'] ?? ''; ?>"></wls-boats-slider>
 
 		<?php
 	}
