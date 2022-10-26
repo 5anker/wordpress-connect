@@ -1,7 +1,8 @@
-name: Deploy to WordPress.org
+name: Update assets etc.
 on:
   release:
-    types: [published]
+    push: [master]
+
 jobs:
   tag:
     name: New release
@@ -14,12 +15,11 @@ jobs:
         # npm install
         # npm run build
 
-    - name: WordPress Plugin Deploy
-      id: deploy
-      uses: 10up/action-wordpress-plugin-deploy@stable
-      with:
-        generate-zip: true
+    - name: Upload plugins assets
+      uses: 10up/action-wordpress-plugin-asset-update@stable
       env:
-        SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
         SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+        SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
         SLUG: 5-anker-connect
+        IGNORE_OTHER_FILES: true
+        README_NAME: README.txt
