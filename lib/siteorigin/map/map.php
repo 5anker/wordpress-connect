@@ -42,7 +42,7 @@ class Anker_Connect_Wls_Map_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-map lat="<?php echo $instance['lat']; ?>" lng="<?php echo $instance['lng']; ?>"></wls-map>
+        <wls-map lat="<?php echo esc_attr($instance['lat']); ?>" lng="<?php echo esc_attr($instance['lng']); ?>"></wls-map>
 		<?php
 	}
 }

@@ -36,7 +36,7 @@ class Anker_Connect_Wls_BoatsGrid_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-boats-grid query="<?php echo $instance['query']; ?>"></wls-boats-grid>
+        <wls-boats-grid query="<?php echo esc_attr($instance['query']); ?>"></wls-boats-grid>
 		<?php
 	}
 }

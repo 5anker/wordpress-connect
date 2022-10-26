@@ -36,7 +36,7 @@ class Anker_Connect_Wls_Boats_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-boats query="<?php echo $instance['query'] ?>"></wls-boats>
+        <wls-boats query="<?php echo esc_attr($instance['query']) ?>"></wls-boats>
 		<?php
 	}
 }

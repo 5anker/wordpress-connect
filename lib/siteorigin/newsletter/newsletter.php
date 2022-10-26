@@ -36,7 +36,7 @@ class Anker_Connect_Wls_Newsletter_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-newsletter privacy="<?php echo $instance['privacy']; ?>"></wls-newsletter>
+        <wls-newsletter privacy="<?php echo esc_attr($instance['privacy']); ?>"></wls-newsletter>
 		<?php
 	}
 }

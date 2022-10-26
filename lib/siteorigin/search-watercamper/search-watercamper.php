@@ -36,7 +36,7 @@ class Anker_Connect_Wls_SearchWaterCamper_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-search-watercamper<?php echo ! empty( $instance['query'] ) ? " query=\"{$instance['query']}\"" : ''; ?>></wls-search-watercamper>
+        <wls-search-watercamper<?php echo ! empty( $instance['query'] ) ? (' query="' . esc_attr($instance['query']) . '"') : ''; ?>></wls-search-watercamper>
 		<?php
 	}
 }

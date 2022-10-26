@@ -54,7 +54,7 @@ class Anker_Connect_Wls_SearchForm_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-search-form<?php echo ! empty( $instance['query'] ) ? " query=\"{$instance['query']}\"" : ''; ?><?php echo ! empty( $instance['fields'] ) ? " fields=\"{$instance['fields']}\"" : ''; ?><?php echo ! empty( $instance['redirect'] ) ? " redirect=\"{$instance['redirect']}\"" : ''; ?><?php echo ! empty( $instance['class'] ) ? " row-class=\"{$instance['class']}\"" : ''; ?>></wls-search-form>
+        <wls-search-form<?php echo ! empty( $instance['query'] ) ? (' query="' . esc_attr($instance['query']) . '"') : ''; ?><?php echo ! empty( $instance['fields'] ) ? " fields=\"{$instance['fields']}\"" : ''; ?><?php echo ! empty( $instance['redirect'] ) ? " redirect=\"{$instance['redirect']}\"" : ''; ?><?php echo ! empty( $instance['class'] ) ? " row-class=\"{$instance['class']}\"" : ''; ?>></wls-search-form>
 		<?php
 	}
 }

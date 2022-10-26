@@ -36,7 +36,7 @@ class Anker_Connect_Wls_BoatBookCalendar_Widget extends SiteOrigin_Widget {
 
 	public function get_html_content( $instance, $args, $template_vars, $css_name ) {
 		?>
-        <wls-boat-book-calendar id="<?php echo $instance['id']; ?>"></wls-boat-book-calendar>
+        <wls-boat-book-calendar id="<?php echo esc_attr($instance['id']); ?>"></wls-boat-book-calendar>
 		<?php
 	}
 }

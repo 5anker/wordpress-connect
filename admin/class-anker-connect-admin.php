@@ -164,7 +164,7 @@ class Anker_Connect_Admin {
                 <a href="?page=5-anker-connect&tab=tools" class="nav-tab <?php echo ( $tab === 'tools' ) ? 'nav-tab-active' : '' ?>"><?php echo __( 'Tools', '5-anker-connect' ) ?></a>
             </nav>
 
-            <div class="tab-content current-tab-<?php echo $tab ?>">
+            <div class="tab-content current-tab-<?php echo esc_attr($tab) ?>">
                 <form method="post" action="options.php">
 					<?php
 					if ( $tab === 'tools' ) {

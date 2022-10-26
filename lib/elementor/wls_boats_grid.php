@@ -51,7 +51,7 @@ class Anker_Connect_Elementor_Wls_BoatsGrid_Widget extends \Elementor\Widget_Bas
 	protected function render($instance = [])
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-boats-grid query="<?php echo $settings['query'] ?? ''; ?>"></wls-boats-grid>
+		<wls-boats-grid query="<?php echo esc_attr($settings['query'] ?? ''); ?>"></wls-boats-grid>
 		<?php
 	}
 }

@@ -61,7 +61,7 @@ class Anker_Connect_Elementor_Wls_SearchWaterCamper_Widget extends \Elementor\Wi
 	protected function render($instance = [])
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-search-watercamper<?php echo !empty($settings['query']) ? " query=\"{$settings['query']}\"" : ''; ?><?php echo !empty($settings['fields']) ? " fields=\"{$settings['fields']}\"" : ''; ?>></wls-search-watercamper>
+		<wls-search-watercamper<?php echo !empty($settings['query']) ? (' query="' . esc_attr($settings['query']) . '"') : ''; ?><?php echo !empty($settings['fields']) ? " fields=\"{$settings['fields']}\"" : ''; ?>></wls-search-watercamper>
 		<?php
 	}
 }

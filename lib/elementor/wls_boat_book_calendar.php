@@ -51,7 +51,7 @@ class Anker_Connect_Elementor_Wls_BoatBookCalendar_Widget extends \Elementor\Wid
 	protected function render()
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-boat-book-calendar id="<?php echo $settings['id'] ?? ''; ?>"></wls-boat-book-calendar>
+		<wls-boat-book-calendar id="<?php echo esc_attr($settings['id'] ?? ''); ?>"></wls-boat-book-calendar>
 		<?php
 	}
 }

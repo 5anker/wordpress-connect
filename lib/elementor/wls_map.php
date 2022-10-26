@@ -61,7 +61,7 @@ class Anker_Connect_Elementor_Wls_Map_Widget extends \Elementor\Widget_Base
 	protected function render()
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-map lat="<?php echo $settings['lat'] ?? ''; ?>" lng="<?php echo $settings['lng'] ?? ''; ?>"></wls-map>
+		<wls-map lat="<?php echo esc_attr($settings['lat'] ?? ''); ?>" lng="<?php echo esc_attr($settings['lng'] ?? ''); ?>"></wls-map>
 		<?php
 	}
 }

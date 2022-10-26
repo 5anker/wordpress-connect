@@ -51,7 +51,7 @@ class Anker_Connect_Elementor_Wls_Newsletter_Widget extends \Elementor\Widget_Ba
 	protected function render($instance = [])
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-newsletter privacy="<?php echo $settings['privacy'] ?? ''; ?>"></wls-newsletter>
+		<wls-newsletter privacy="<?php echo esc_attr($settings['privacy'] ?? ''); ?>"></wls-newsletter>
 		<?php
 	}
 }

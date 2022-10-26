@@ -81,7 +81,7 @@ class Anker_Connect_Elementor_Wls_SearchForm_Widget extends \Elementor\Widget_Ba
 	protected function render($instance = [])
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-search-form<?php echo !empty($settings['query']) ? " query=\"{$settings['query']}\"" : ''; ?><?php echo !empty($settings['fields']) ? " fields=\"{$settings['fields']}\"" : ''; ?><?php echo !empty($settings['redirect']) ? " redirect=\"{$settings['redirect']}\"" : ''; ?><?php echo !empty($settings['class']) ? " row-class=\"{$settings['class']}\"" : ''; ?>></wls-search-form>
+		<wls-search-form<?php echo !empty($settings['query']) ? (' query="' . esc_attr($settings['query']) . '"') : ''; ?><?php echo !empty($settings['fields']) ? " fields=\"{$settings['fields']}\"" : ''; ?><?php echo !empty($settings['redirect']) ? " redirect=\"{$settings['redirect']}\"" : ''; ?><?php echo !empty($settings['class']) ? " row-class=\"{$settings['class']}\"" : ''; ?>></wls-search-form>
 		<?php
 	}
 }
