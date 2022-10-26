@@ -61,7 +61,7 @@ class Anker_Connect_Elementor_Wls_Search_Widget extends \Elementor\Widget_Base
 	protected function render($instance = [])
 	{
 		$settings = $this->get_settings_for_display(); ?>
-		<wls-search<?php echo !empty($settings['query']) ? (' query="' . esc_attr($settings['query']) . '"') : ''; ?><?php echo !empty($settings['fields']) ? " fields=\"{$settings['fields']}\"" : ''; ?>></wls-search>
+		<wls-search<?php echo !empty($settings['query']) ? (' query="' . esc_attr($settings['query']) . '"') : ''; ?><?php echo !empty($settings['fields']) ? (' fields="' . esc_attr($settings['fields']) . '"') : ''; ?>></wls-search>
 		<?php
 	}
 }
