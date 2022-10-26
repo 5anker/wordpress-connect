@@ -1,19 +1,15 @@
-name: Update assets etc.
+name: Update Assets
 on:
   push:
     branch: [master]
 
 jobs:
-  tag:
-    name: New release
+  deploy:
+    name: Update Assets
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Build
-      run: |
-        # npm install
-        # npm run build
+      uses: actions/checkout@v3
 
     - name: Upload plugins assets
       uses: 10up/action-wordpress-plugin-asset-update@stable
