@@ -1,7 +1,7 @@
 name: Update assets etc.
 on:
-  release:
-    push: [master]
+  push:
+    branch: [master]
 
 jobs:
   tag:
